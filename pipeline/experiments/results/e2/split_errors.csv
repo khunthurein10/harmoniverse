@@ -1,0 +1,6 @@
+split,median_abs_err_pct,mean_abs_err_pct,scored_cells
+S0 global,56.7,49.8,1669
+S1 day/night,25.0,34.1,1669
+S2 day/night x region,18.2,29.1,1669
+S3 day/night x region x land,18.5,28.1,1669
+S4 day/night x region x month,11.1,21.6,1669

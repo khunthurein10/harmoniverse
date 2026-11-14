@@ -1,0 +1,5 @@
+measure,held_out_median_err_pct,held_out_mean_err_pct,year_to_year_wobble_pct
+"hotspots, low kept",18.2,29.1,6.0
+"hotspots, low dropped",17.1,28.3,6.1
+"fire-days, low kept",20.8,29.6,8.9
+"fire-days, low dropped",20.7,29.4,8.8

@@ -1,0 +1,4 @@
+variant,aqua_detections_used,regional_median_err_pct,box_median_err_pct,box_day_median_err_pct,box_night_median_err_pct,box_typical_factor_off,boxes_scored
+V1 none,13607782,11.0,35.0,32.2,55.4,1.43,642128
+V2 drop edges (MRBA60),8418064,11.9,40.8,38.1,66.4,1.52,594672
+V3 weight edges (GFED5NRT-style),13588747,13.5,42.8,40.2,58.9,1.58,642128
