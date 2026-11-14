@@ -3,6 +3,8 @@
 **One consistent record of global fire hotspots, 2003 to 2026.**
 Built for the NASA Space Apps Challenge 2026: *Harmonization of MODIS and VIIRS Hot Spots*.
 
+**Try it live: [harmoniverse-web.vercel.app](https://harmoniverse-web.vercel.app)**
+
 MODIS (since 2000, 1 km pixels) and VIIRS (since 2012, 375 m pixels) see the same fires differently: for the same
 fires in 2012 to 2015, S-NPP VIIRS counted about 6 times more hotspots than Aqua MODIS. Joining the two records as
 they are creates a fake jump in 2012. Harmoniverse converts the MODIS years to the S-NPP VIIRS scale, so every month
