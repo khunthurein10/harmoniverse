@@ -1,0 +1,337 @@
+region,region_name,daynight,month,ratio_used,ratio_level,ratio_1month,ratio_3month,ratio_year,aqua_hotspots_2015_2019,snpp_hotspots_2015_2019
+AUST,Australia and New Zealand,D,1,5.41,1 month,5.41,5.67,5.42,17599,95201
+AUST,Australia and New Zealand,D,2,5.57,1 month,5.57,5.22,5.42,11821,65896
+AUST,Australia and New Zealand,D,3,4.91,1 month,4.91,4.94,5.42,24864,122064
+AUST,Australia and New Zealand,D,4,4.85,1 month,4.85,4.92,5.42,66712,323301
+AUST,Australia and New Zealand,D,5,4.98,1 month,4.98,5.0,5.42,78589,391692
+AUST,Australia and New Zealand,D,6,5.22,1 month,5.22,5.18,5.42,51030,266127
+AUST,Australia and New Zealand,D,7,5.43,1 month,5.43,5.29,5.42,53130,288648
+AUST,Australia and New Zealand,D,8,5.22,1 month,5.22,5.39,5.42,43210,225341
+AUST,Australia and New Zealand,D,9,5.49,1 month,5.49,5.58,5.42,56048,307734
+AUST,Australia and New Zealand,D,10,5.9,1 month,5.9,5.84,5.42,68518,403925
+AUST,Australia and New Zealand,D,11,6.05,1 month,6.05,5.91,5.42,74306,449608
+AUST,Australia and New Zealand,D,12,5.76,1 month,5.76,5.86,5.42,60652,349307
+AUST,Australia and New Zealand,N,1,19.29,1 month,19.29,20.33,24.03,4922,94945
+AUST,Australia and New Zealand,N,2,23.35,1 month,23.35,22.38,24.03,2834,66186
+AUST,Australia and New Zealand,N,3,27.51,1 month,27.51,29.65,24.03,2432,66898
+AUST,Australia and New Zealand,N,4,35.03,1 month,35.03,36.94,24.03,4284,150083
+AUST,Australia and New Zealand,N,5,44.05,1 month,44.05,40.9,24.03,4375,192720
+AUST,Australia and New Zealand,N,6,45.74,1 month,45.74,44.42,24.03,2353,107628
+AUST,Australia and New Zealand,N,7,43.78,1 month,43.78,38.26,24.03,2381,104236
+AUST,Australia and New Zealand,N,8,31.96,1 month,31.96,28.32,24.03,4883,156042
+AUST,Australia and New Zealand,N,9,22.84,1 month,22.84,22.79,24.03,9947,227190
+AUST,Australia and New Zealand,N,10,19.74,1 month,19.74,20.1,24.03,14854,293214
+AUST,Australia and New Zealand,N,11,19.1,1 month,19.1,19.63,24.03,21694,414309
+AUST,Australia and New Zealand,N,12,20.15,1 month,20.15,19.55,24.03,18707,376907
+BOAS,Boreal Asia,D,1,5.67,3 month window,6.14,5.67,5.93,190,1166
+BOAS,Boreal Asia,D,2,5.66,1 month,5.66,5.17,5.93,2026,11474
+BOAS,Boreal Asia,D,3,5.11,1 month,5.11,5.34,5.93,17728,90510
+BOAS,Boreal Asia,D,4,5.39,1 month,5.39,5.53,5.93,69331,373553
+BOAS,Boreal Asia,D,5,5.86,1 month,5.86,5.67,5.93,54272,317771
+BOAS,Boreal Asia,D,6,5.89,1 month,5.89,6.27,5.93,42101,247858
+BOAS,Boreal Asia,D,7,6.6,1 month,6.6,6.33,5.93,113664,750575
+BOAS,Boreal Asia,D,8,6.16,1 month,6.16,6.3,5.93,70844,436599
+BOAS,Boreal Asia,D,9,5.22,1 month,5.22,5.78,5.93,22801,119126
+BOAS,Boreal Asia,D,10,4.78,1 month,4.78,5.11,5.93,14334,68563
+BOAS,Boreal Asia,D,11,5.75,1 month,5.75,4.95,5.93,2973,17103
+BOAS,Boreal Asia,D,12,5.75,3 month window,5.22,5.75,5.93,158,825
+BOAS,Boreal Asia,N,1,34.55,whole year (thin data),1214.33,487.23,34.55,3,3643
+BOAS,Boreal Asia,N,2,78.58,3 month window,203.27,78.58,34.55,26,5285
+BOAS,Boreal Asia,N,3,58.62,1 month,58.62,56.39,34.55,333,19519
+BOAS,Boreal Asia,N,4,54.1,1 month,54.1,50.35,34.55,1987,107496
+BOAS,Boreal Asia,N,5,46.59,1 month,46.59,38.59,34.55,2710,126248
+BOAS,Boreal Asia,N,6,28.19,1 month,28.19,32.45,34.55,5042,142119
+BOAS,Boreal Asia,N,7,31.72,1 month,31.72,31.72,34.55,23205,736038
+BOAS,Boreal Asia,N,8,32.64,1 month,32.64,33.14,34.55,19210,626985
+BOAS,Boreal Asia,N,9,44.07,1 month,44.07,34.46,34.55,3898,171804
+BOAS,Boreal Asia,N,10,31.91,1 month,31.91,42.86,34.55,1016,32422
+BOAS,Boreal Asia,N,11,43.69,3 month window,115.55,43.69,34.55,88,10168
+BOAS,Boreal Asia,N,12,34.55,whole year (thin data),5689.0,211.96,34.55,1,5689
+BONA,Boreal North America,D,1,4.39,3 month window,3.93,4.39,6.23,829,3261
+BONA,Boreal North America,D,2,4.81,3 month window,5.71,4.81,6.23,205,1171
+BONA,Boreal North America,D,3,4.39,3 month window,6.54,4.39,6.23,314,2053
+BONA,Boreal North America,D,4,4.84,3 month window,4.07,4.84,6.23,2937,11947
+BONA,Boreal North America,D,5,5.75,3 month window,4.96,5.75,6.23,14806,73438
+BONA,Boreal North America,D,6,6.62,3 month window,6.52,6.62,6.23,21753,141897
+BONA,Boreal North America,D,7,7.02,3 month window,7.34,7.02,6.23,37004,271713
+BONA,Boreal North America,D,8,7.07,3 month window,6.99,7.07,6.23,26599,185869
+BONA,Boreal North America,D,9,5.99,3 month window,5.45,5.99,6.23,4932,26878
+BONA,Boreal North America,D,10,4.16,3 month window,3.45,4.16,6.23,9361,32307
+BONA,Boreal North America,D,11,3.76,3 month window,4.23,3.76,6.23,4451,18838
+BONA,Boreal North America,D,12,4.24,3 month window,4.49,4.24,6.23,1151,5170
+BONA,Boreal North America,N,1,29.57,whole year (thin data),325.67,168.91,29.57,9,2931
+BONA,Boreal North America,N,2,29.57,whole year (thin data),426.33,274.86,29.57,3,1279
+BONA,Boreal North America,N,3,29.57,whole year (thin data),183.7,198.32,29.57,10,1837
+BONA,Boreal North America,N,4,34.74,3 month window,168.44,34.74,29.57,18,3032
+BONA,Boreal North America,N,5,28.89,3 month window,32.51,28.89,29.57,1749,56859
+BONA,Boreal North America,N,6,27.57,3 month window,26.14,27.57,29.57,3211,83945
+BONA,Boreal North America,N,7,27.89,3 month window,27.05,27.89,29.57,7679,207706
+BONA,Boreal North America,N,8,28.38,3 month window,28.94,28.38,29.57,11438,330978
+BONA,Boreal North America,N,9,29.82,3 month window,31.04,29.82,29.57,1436,44568
+BONA,Boreal North America,N,10,40.06,3 month window,55.47,40.06,29.57,328,18193
+BONA,Boreal North America,N,11,66.9,3 month window,73.97,66.9,29.57,233,17234
+BONA,Boreal North America,N,12,88.3,3 month window,116.93,88.3,29.57,42,4911
+CEAM,Central America,D,1,5.07,1 month,5.07,5.28,5.94,12329,62546
+CEAM,Central America,D,2,5.4,1 month,5.4,5.45,5.94,17420,94023
+CEAM,Central America,D,3,5.6,1 month,5.6,5.6,5.94,36381,203832
+CEAM,Central America,D,4,5.65,1 month,5.65,5.86,5.94,82069,463632
+CEAM,Central America,D,5,6.26,1 month,6.26,6.05,5.94,68224,427016
+CEAM,Central America,D,6,7.24,1 month,7.24,6.49,5.94,15330,110976
+CEAM,Central America,D,7,7.44,1 month,7.44,7.37,5.94,4713,35080
+CEAM,Central America,D,8,7.78,1 month,7.78,7.34,5.94,4187,32586
+CEAM,Central America,D,9,6.5,1 month,6.5,7.14,5.94,2718,17665
+CEAM,Central America,D,10,6.72,1 month,6.72,6.5,5.94,2345,15759
+CEAM,Central America,D,11,6.36,1 month,6.36,5.89,5.94,3627,23050
+CEAM,Central America,D,12,5.37,1 month,5.37,5.37,5.94,6977,37496
+CEAM,Central America,N,1,21.29,1 month,21.29,25.4,29.59,655,13942
+CEAM,Central America,N,2,28.71,1 month,28.71,28.57,29.59,878,25205
+CEAM,Central America,N,3,30.8,1 month,30.8,31.56,29.59,2084,64186
+CEAM,Central America,N,4,32.54,1 month,32.54,30.7,29.59,4194,136472
+CEAM,Central America,N,5,29.1,1 month,29.1,31.03,29.59,4930,143482
+CEAM,Central America,N,6,33.21,1 month,33.21,29.71,29.59,1442,47893
+CEAM,Central America,N,7,23.2,1 month,23.2,29.78,29.59,317,7354
+CEAM,Central America,N,8,19.51,1 month,19.51,21.11,29.59,279,5442
+CEAM,Central America,N,9,17.34,3 month window,19.69,17.34,29.59,151,2973
+CEAM,Central America,N,10,13.73,1 month,13.73,19.67,29.59,265,3639
+CEAM,Central America,N,11,21.63,3 month window,32.89,21.63,29.59,119,3914
+CEAM,Central America,N,12,24.57,1 month,24.57,23.44,29.59,256,6291
+CEAS,Central Asia,D,1,5.16,1 month,5.16,5.3,4.88,13342,68894
+CEAS,Central Asia,D,2,5.49,1 month,5.49,4.97,4.88,33911,186097
+CEAS,Central Asia,D,3,4.72,1 month,4.72,4.89,4.88,81597,385145
+CEAS,Central Asia,D,4,4.83,1 month,4.83,4.78,4.88,107185,517459
+CEAS,Central Asia,D,5,4.78,1 month,4.78,4.79,4.88,31340,149672
+CEAS,Central Asia,D,6,4.6,1 month,4.6,4.74,4.88,15894,73144
+CEAS,Central Asia,D,7,4.77,1 month,4.77,4.82,4.88,37916,180718
+CEAS,Central Asia,D,8,4.94,1 month,4.94,4.77,4.88,46031,227231
+CEAS,Central Asia,D,9,4.59,1 month,4.59,4.68,4.88,38138,174989
+CEAS,Central Asia,D,10,4.56,1 month,4.56,4.93,4.88,68255,310925
+CEAS,Central Asia,D,11,6.38,1 month,6.38,5.04,4.88,26512,169235
+CEAS,Central Asia,D,12,4.81,1 month,4.81,5.74,4.88,9854,47430
+CEAS,Central Asia,N,1,59.61,3 month window,54.57,59.61,35.94,193,10532
+CEAS,Central Asia,N,2,62.65,1 month,62.65,57.4,35.94,455,28508
+CEAS,Central Asia,N,3,55.57,1 month,55.57,47.87,35.94,1014,56352
+CEAS,Central Asia,N,4,42.39,1 month,42.39,45.52,35.94,2651,112376
+CEAS,Central Asia,N,5,44.32,1 month,44.32,40.38,35.94,1577,69900
+CEAS,Central Asia,N,6,34.19,1 month,34.19,29.15,35.94,1871,63975
+CEAS,Central Asia,N,7,23.81,1 month,23.81,26.98,35.94,6253,148879
+CEAS,Central Asia,N,8,28.15,1 month,28.15,27.7,35.94,5401,152028
+CEAS,Central Asia,N,9,36.28,1 month,36.28,35.03,35.94,2553,92619
+CEAS,Central Asia,N,10,63.47,1 month,63.47,48.12,35.94,1195,75848
+CEAS,Central Asia,N,11,73.34,1 month,73.34,65.4,35.94,471,34541
+CEAS,Central Asia,N,12,65.65,3 month window,57.26,65.65,35.94,176,10077
+EQAS,Equatorial Asia,D,1,6.13,1 month,6.13,6.42,5.94,3451,21169
+EQAS,Equatorial Asia,D,2,7.04,1 month,7.04,6.38,5.94,3319,23379
+EQAS,Equatorial Asia,D,3,6.15,1 month,6.15,6.21,5.94,5661,34810
+EQAS,Equatorial Asia,D,4,5.66,1 month,5.66,5.77,5.94,4485,25404
+EQAS,Equatorial Asia,D,5,5.36,1 month,5.36,5.51,5.94,4098,21947
+EQAS,Equatorial Asia,D,6,5.5,1 month,5.5,5.47,5.94,6177,33948
+EQAS,Equatorial Asia,D,7,5.49,1 month,5.49,5.45,5.94,16494,90517
+EQAS,Equatorial Asia,D,8,5.43,1 month,5.43,5.58,5.94,41201,223753
+EQAS,Equatorial Asia,D,9,5.71,1 month,5.71,5.9,5.94,60789,347132
+EQAS,Equatorial Asia,D,10,6.56,1 month,6.56,6.17,5.94,45620,299381
+EQAS,Equatorial Asia,D,11,7.0,1 month,7.0,6.62,5.94,12300,86150
+EQAS,Equatorial Asia,D,12,6.19,1 month,6.19,6.67,5.94,4813,29795
+EQAS,Equatorial Asia,N,1,21.93,1 month,21.93,19.14,19.15,256,5614
+EQAS,Equatorial Asia,N,2,16.65,1 month,16.65,18.84,19.15,587,9773
+EQAS,Equatorial Asia,N,3,19.51,1 month,19.51,18.37,19.15,744,14514
+EQAS,Equatorial Asia,N,4,18.68,1 month,18.68,19.6,19.15,529,9883
+EQAS,Equatorial Asia,N,5,21.83,1 month,21.83,20.78,19.15,245,5349
+EQAS,Equatorial Asia,N,6,24.11,1 month,24.11,19.62,19.15,256,6172
+EQAS,Equatorial Asia,N,7,18.49,1 month,18.49,19.11,19.15,1491,27566
+EQAS,Equatorial Asia,N,8,19.03,1 month,19.03,17.33,19.15,4643,88375
+EQAS,Equatorial Asia,N,9,16.66,1 month,16.66,18.98,19.15,14351,239118
+EQAS,Equatorial Asia,N,10,22.68,1 month,22.68,19.14,19.15,8901,201877
+EQAS,Equatorial Asia,N,11,22.45,1 month,22.45,22.63,19.15,1190,26720
+EQAS,Equatorial Asia,N,12,21.66,1 month,21.66,22.24,19.15,297,6432
+EURO,Europe,D,1,4.76,1 month,4.76,4.53,4.69,1152,5478
+EURO,Europe,D,2,4.31,1 month,4.31,4.41,4.69,4437,19120
+EURO,Europe,D,3,4.41,1 month,4.41,4.44,4.69,11471,50603
+EURO,Europe,D,4,4.57,1 month,4.57,4.5,4.69,7362,33624
+EURO,Europe,D,5,4.82,1 month,4.82,4.66,4.69,1893,9121
+EURO,Europe,D,6,4.84,1 month,4.84,5.32,4.69,2434,11771
+EURO,Europe,D,7,5.55,1 month,5.55,5.2,4.69,9018,50055
+EURO,Europe,D,8,4.99,1 month,4.99,5.12,4.69,10997,54921
+EURO,Europe,D,9,4.85,1 month,4.85,4.67,4.69,8846,42923
+EURO,Europe,D,10,4.29,1 month,4.29,4.45,4.69,13598,58397
+EURO,Europe,D,11,4.04,1 month,4.04,4.3,4.69,3648,14720
+EURO,Europe,D,12,5.09,1 month,5.09,4.39,4.69,1262,6418
+EURO,Europe,N,1,44.42,3 month window,33.27,44.42,21.68,103,3427
+EURO,Europe,N,2,48.24,3 month window,54.61,48.24,21.68,115,6280
+EURO,Europe,N,3,49.87,3 month window,52.85,49.87,21.68,176,9301
+EURO,Europe,N,4,45.65,1 month,45.65,48.12,21.68,254,11596
+EURO,Europe,N,5,33.38,3 month window,46.24,33.38,21.68,109,5040
+EURO,Europe,N,6,22.94,1 month,22.94,23.61,21.68,433,9933
+EURO,Europe,N,7,22.14,1 month,22.14,17.28,21.68,1488,32951
+EURO,Europe,N,8,14.12,1 month,14.12,17.34,21.68,3060,43207
+EURO,Europe,N,9,20.47,1 month,20.47,16.2,21.68,872,17849
+EURO,Europe,N,10,19.67,1 month,19.67,21.73,21.68,755,14852
+EURO,Europe,N,11,25.65,3 month window,57.09,25.65,21.68,75,4282
+EURO,Europe,N,12,43.67,3 month window,44.22,43.67,21.68,116,5129
+MIDE,Middle East,D,1,4.62,1 month,4.62,4.45,5.22,2181,10082
+MIDE,Middle East,D,2,5.11,1 month,5.11,5.36,5.22,2101,10744
+MIDE,Middle East,D,3,6.61,1 month,6.61,5.82,5.22,1693,11186
+MIDE,Middle East,D,4,5.96,1 month,5.96,5.47,5.22,1280,7623
+MIDE,Middle East,D,5,4.75,1 month,4.75,4.85,5.22,3587,17054
+MIDE,Middle East,D,6,4.7,1 month,4.7,4.66,5.22,6973,32795
+MIDE,Middle East,D,7,4.58,1 month,4.58,4.8,5.22,8123,37187
+MIDE,Middle East,D,8,5.07,1 month,5.07,5.28,5.22,9692,49097
+MIDE,Middle East,D,9,6.13,1 month,6.13,5.93,5.22,9042,55392
+MIDE,Middle East,D,10,6.84,1 month,6.84,5.84,5.22,7296,49929
+MIDE,Middle East,D,11,4.45,1 month,4.45,5.34,5.22,7223,32174
+MIDE,Middle East,D,12,3.89,1 month,3.89,4.34,5.22,3118,12117
+MIDE,Middle East,N,1,17.17,1 month,17.17,15.49,13.26,592,10165
+MIDE,Middle East,N,2,16.06,1 month,16.06,14.88,13.26,558,8961
+MIDE,Middle East,N,3,12.61,1 month,12.61,12.7,13.26,889,11212
+MIDE,Middle East,N,4,11.03,1 month,11.03,12.81,13.26,1081,11925
+MIDE,Middle East,N,5,13.99,1 month,13.99,13.09,13.26,1756,24575
+MIDE,Middle East,N,6,13.3,1 month,13.3,13.47,13.26,3056,40645
+MIDE,Middle East,N,7,13.34,1 month,13.34,13.15,13.26,3088,41197
+MIDE,Middle East,N,8,12.81,1 month,12.81,13.19,13.26,3074,39367
+MIDE,Middle East,N,9,13.48,1 month,13.48,12.86,13.26,2562,34537
+MIDE,Middle East,N,10,12.11,1 month,12.11,12.94,13.26,1936,23443
+MIDE,Middle East,N,11,13.12,1 month,13.12,12.81,13.26,1133,14867
+MIDE,Middle East,N,12,13.97,1 month,13.97,14.33,13.26,859,11996
+NHAF,Northern Hemisphere Africa,D,1,4.75,1 month,4.75,4.71,4.82,856259,4069066
+NHAF,Northern Hemisphere Africa,D,2,5.13,1 month,5.13,4.9,4.82,471861,2420396
+NHAF,Northern Hemisphere Africa,D,3,4.95,1 month,4.95,5.03,4.82,284816,1409288
+NHAF,Northern Hemisphere Africa,D,4,4.89,1 month,4.89,5.0,4.82,174753,855193
+NHAF,Northern Hemisphere Africa,D,5,5.67,1 month,5.67,5.17,4.82,48828,276702
+NHAF,Northern Hemisphere Africa,D,6,8.04,1 month,8.04,6.26,4.82,8610,69235
+NHAF,Northern Hemisphere Africa,D,7,8.45,1 month,8.45,8.45,4.82,6183,52218
+NHAF,Northern Hemisphere Africa,D,8,9.18,1 month,9.18,8.33,4.82,4789,43967
+NHAF,Northern Hemisphere Africa,D,9,7.63,1 month,7.63,6.15,4.82,6733,51371
+NHAF,Northern Hemisphere Africa,D,10,5.79,1 month,5.79,4.99,4.82,67718,392366
+NHAF,Northern Hemisphere Africa,D,11,4.8,1 month,4.8,4.62,4.82,366638,1758211
+NHAF,Northern Hemisphere Africa,D,12,4.45,1 month,4.45,4.63,4.82,860403,3825334
+NHAF,Northern Hemisphere Africa,N,1,37.68,1 month,37.68,36.06,33.79,29800,1122724
+NHAF,Northern Hemisphere Africa,N,2,34.15,1 month,34.15,35.11,33.79,18121,618870
+NHAF,Northern Hemisphere Africa,N,3,28.11,1 month,28.11,31.74,33.79,8430,236998
+NHAF,Northern Hemisphere Africa,N,4,27.9,1 month,27.9,27.93,33.79,3424,95539
+NHAF,Northern Hemisphere Africa,N,5,26.38,1 month,26.38,26.99,33.79,957,25249
+NHAF,Northern Hemisphere Africa,N,6,20.78,1 month,20.78,24.33,33.79,413,8584
+NHAF,Northern Hemisphere Africa,N,7,19.7,3 month window,21.44,19.7,33.79,173,3709
+NHAF,Northern Hemisphere Africa,N,8,16.22,3 month window,15.57,16.22,33.79,182,2834
+NHAF,Northern Hemisphere Africa,N,9,13.53,1 month,13.53,19.84,33.79,292,3950
+NHAF,Northern Hemisphere Africa,N,10,21.34,1 month,21.34,27.07,33.79,1757,37490
+NHAF,Northern Hemisphere Africa,N,11,28.71,1 month,28.71,32.84,33.79,8539,245170
+NHAF,Northern Hemisphere Africa,N,12,35.42,1 month,35.42,35.59,33.79,21405,758259
+NHSA,Northern Hemisphere South America,D,1,5.88,1 month,5.88,5.89,6.14,29900,175671
+NHSA,Northern Hemisphere South America,D,2,5.98,1 month,5.98,6.08,6.14,47821,285875
+NHSA,Northern Hemisphere South America,D,3,6.28,1 month,6.28,6.33,6.14,51566,323912
+NHSA,Northern Hemisphere South America,D,4,7.07,1 month,7.07,6.57,6.14,25443,179776
+NHSA,Northern Hemisphere South America,D,5,6.92,1 month,6.92,6.96,6.14,6882,47646
+NHSA,Northern Hemisphere South America,D,6,5.77,1 month,5.77,6.44,6.14,2137,12330
+NHSA,Northern Hemisphere South America,D,7,5.94,1 month,5.94,5.97,6.14,3752,22270
+NHSA,Northern Hemisphere South America,D,8,6.06,1 month,6.06,6.16,6.14,6678,40449
+NHSA,Northern Hemisphere South America,D,9,6.39,1 month,6.39,5.99,6.14,6532,41721
+NHSA,Northern Hemisphere South America,D,10,5.74,1 month,5.74,5.82,6.14,11959,68684
+NHSA,Northern Hemisphere South America,D,11,5.6,1 month,5.6,5.67,6.14,12376,69354
+NHSA,Northern Hemisphere South America,D,12,5.67,1 month,5.67,5.76,6.14,16573,93958
+NHSA,Northern Hemisphere South America,N,1,20.5,1 month,20.5,20.86,20.13,2252,46160
+NHSA,Northern Hemisphere South America,N,2,21.21,1 month,21.21,20.02,20.13,3985,84527
+NHSA,Northern Hemisphere South America,N,3,19.15,1 month,19.15,20.02,20.13,6631,126981
+NHSA,Northern Hemisphere South America,N,4,20.42,1 month,20.42,19.71,20.13,2745,56046
+NHSA,Northern Hemisphere South America,N,5,22.76,1 month,22.76,20.9,20.13,594,13519
+NHSA,Northern Hemisphere South America,N,6,21.61,3 month window,23.75,21.61,20.13,72,1710
+NHSA,Northern Hemisphere South America,N,7,17.51,3 month window,15.46,17.51,20.13,136,2102
+NHSA,Northern Hemisphere South America,N,8,16.86,1 month,16.86,16.78,20.13,259,4367
+NHSA,Northern Hemisphere South America,N,9,17.28,1 month,17.28,18.33,20.13,316,5459
+NHSA,Northern Hemisphere South America,N,10,20.28,1 month,20.28,20.29,20.13,366,7422
+NHSA,Northern Hemisphere South America,N,11,22.26,1 month,22.26,20.8,20.13,484,10774
+NHSA,Northern Hemisphere South America,N,12,20.12,1 month,20.12,20.66,20.13,766,15410
+SEAS,Southeast Asia,D,1,6.03,1 month,6.03,6.17,5.66,69315,417698
+SEAS,Southeast Asia,D,2,6.21,1 month,6.21,5.61,5.66,118746,736939
+SEAS,Southeast Asia,D,3,5.26,1 month,5.26,5.35,5.66,281599,1482089
+SEAS,Southeast Asia,D,4,5.01,1 month,5.01,5.35,5.66,223044,1118278
+SEAS,Southeast Asia,D,5,7.42,1 month,7.42,5.52,5.66,48915,363035
+SEAS,Southeast Asia,D,6,8.57,1 month,8.57,7.54,5.66,6409,54931
+SEAS,Southeast Asia,D,7,7.21,1 month,7.21,7.7,5.66,2944,21225
+SEAS,Southeast Asia,D,8,6.42,1 month,6.42,7.23,5.66,3254,20886
+SEAS,Southeast Asia,D,9,8.02,1 month,8.02,5.45,5.66,3465,27796
+SEAS,Southeast Asia,D,10,5.13,1 month,5.13,5.96,5.66,38580,198106
+SEAS,Southeast Asia,D,11,6.41,1 month,6.41,6.0,5.66,54148,347007
+SEAS,Southeast Asia,D,12,6.31,1 month,6.31,6.22,5.66,36371,229638
+SEAS,Southeast Asia,N,1,75.14,1 month,75.14,82.72,67.38,1204,90468
+SEAS,Southeast Asia,N,2,87.98,1 month,87.98,83.45,67.38,2952,259710
+SEAS,Southeast Asia,N,3,82.99,1 month,82.99,71.64,67.38,7476,620463
+SEAS,Southeast Asia,N,4,54.04,1 month,54.04,65.3,67.38,7566,408835
+SEAS,Southeast Asia,N,5,45.98,1 month,45.98,51.27,67.38,2433,111858
+SEAS,Southeast Asia,N,6,36.37,1 month,36.37,43.2,67.38,539,19601
+SEAS,Southeast Asia,N,7,30.76,3 month window,23.58,30.76,67.38,156,3678
+SEAS,Southeast Asia,N,8,23.14,3 month window,18.67,23.14,67.38,157,2931
+SEAS,Southeast Asia,N,9,33.69,3 month window,28.12,33.69,67.38,127,3571
+SEAS,Southeast Asia,N,10,56.27,3 month window,57.45,56.27,67.38,129,7411
+SEAS,Southeast Asia,N,11,71.21,1 month,71.21,69.84,67.38,229,16308
+SEAS,Southeast Asia,N,12,72.0,1 month,72.0,73.77,67.38,596,42912
+SHAF,Southern Hemisphere Africa,D,1,6.38,1 month,6.38,7.02,4.68,18722,119515
+SHAF,Southern Hemisphere Africa,D,2,6.73,1 month,6.73,6.57,4.68,23815,160357
+SHAF,Southern Hemisphere Africa,D,3,6.56,1 month,6.56,6.32,4.68,35030,229675
+SHAF,Southern Hemisphere Africa,D,4,5.89,1 month,5.89,4.95,4.68,42955,253069
+SHAF,Southern Hemisphere Africa,D,5,4.57,1 month,4.57,4.16,4.68,256649,1174077
+SHAF,Southern Hemisphere Africa,D,6,3.95,1 month,3.95,4.12,4.68,845872,3340860
+SHAF,Southern Hemisphere Africa,D,7,4.14,1 month,4.14,4.23,4.68,1104997,4572760
+SHAF,Southern Hemisphere Africa,D,8,4.51,1 month,4.51,4.54,4.68,1229268,5548185
+SHAF,Southern Hemisphere Africa,D,9,5.11,1 month,5.11,4.97,4.68,838618,4282117
+SHAF,Southern Hemisphere Africa,D,10,6.46,1 month,6.46,5.62,4.68,305923,1977041
+SHAF,Southern Hemisphere Africa,D,11,7.53,1 month,7.53,6.77,4.68,92319,695500
+SHAF,Southern Hemisphere Africa,D,12,7.86,1 month,7.86,7.43,4.68,21956,172655
+SHAF,Southern Hemisphere Africa,N,1,16.33,1 month,16.33,18.64,37.91,1240,20249
+SHAF,Southern Hemisphere Africa,N,2,16.09,1 month,16.09,16.63,37.91,1050,16890
+SHAF,Southern Hemisphere Africa,N,3,17.4,1 month,17.4,18.19,37.91,1203,20936
+SHAF,Southern Hemisphere Africa,N,4,25.76,1 month,25.76,26.19,37.91,418,10769
+SHAF,Southern Hemisphere Africa,N,5,32.36,1 month,32.36,31.01,37.91,1742,56376
+SHAF,Southern Hemisphere Africa,N,6,30.99,1 month,30.99,32.07,37.91,8618,267073
+SHAF,Southern Hemisphere Africa,N,7,32.61,1 month,32.61,36.75,37.91,16170,527311
+SHAF,Southern Hemisphere Africa,N,8,44.23,1 month,44.23,41.52,37.91,15581,689172
+SHAF,Southern Hemisphere Africa,N,9,48.78,1 month,48.78,44.79,37.91,13998,682836
+SHAF,Southern Hemisphere Africa,N,10,39.82,1 month,39.82,43.54,37.91,9461,376777
+SHAF,Southern Hemisphere Africa,N,11,32.51,1 month,32.51,36.73,37.91,3455,112335
+SHAF,Southern Hemisphere Africa,N,12,23.59,1 month,23.59,27.34,37.91,1123,26487
+SHSA,Southern Hemisphere South America,D,1,5.07,1 month,5.07,5.18,4.57,32749,166001
+SHSA,Southern Hemisphere South America,D,2,4.9,1 month,4.9,4.67,4.57,17689,86643
+SHSA,Southern Hemisphere South America,D,3,3.92,1 month,3.92,4.23,4.57,22652,88697
+SHSA,Southern Hemisphere South America,D,4,4.0,1 month,4.0,4.02,4.57,21415,85744
+SHSA,Southern Hemisphere South America,D,5,4.13,1 month,4.13,4.11,4.57,23065,95348
+SHSA,Southern Hemisphere South America,D,6,4.15,1 month,4.15,4.08,4.57,48301,200214
+SHSA,Southern Hemisphere South America,D,7,4.04,1 month,4.04,4.18,4.57,124010,501459
+SHSA,Southern Hemisphere South America,D,8,4.25,1 month,4.25,4.33,4.57,304129,1291480
+SHSA,Southern Hemisphere South America,D,9,4.48,1 month,4.48,4.58,4.57,386665,1732256
+SHSA,Southern Hemisphere South America,D,10,5.26,1 month,5.26,4.78,4.57,199910,1052251
+SHSA,Southern Hemisphere South America,D,11,4.97,1 month,4.97,5.18,4.57,113660,564810
+SHSA,Southern Hemisphere South America,D,12,5.32,1 month,5.32,5.09,4.57,59834,318271
+SHSA,Southern Hemisphere South America,N,1,13.09,1 month,13.09,14.58,17.96,7312,95723
+SHSA,Southern Hemisphere South America,N,2,14.82,1 month,14.82,14.2,17.96,2998,44433
+SHSA,Southern Hemisphere South America,N,3,17.45,1 month,17.45,16.24,17.96,1927,33624
+SHSA,Southern Hemisphere South America,N,4,17.57,1 month,17.57,18.07,17.96,1463,25700
+SHSA,Southern Hemisphere South America,N,5,19.08,1 month,19.08,20.55,17.96,1900,36243
+SHSA,Southern Hemisphere South America,N,6,22.67,1 month,22.67,19.75,17.96,3367,76340
+SHSA,Southern Hemisphere South America,N,7,18.8,1 month,18.8,19.79,17.96,9003,169276
+SHSA,Southern Hemisphere South America,N,8,19.76,1 month,19.76,19.19,17.96,27999,553354
+SHSA,Southern Hemisphere South America,N,9,18.9,1 month,18.9,18.7,17.96,44379,838710
+SHSA,Southern Hemisphere South America,N,10,17.29,1 month,17.29,17.94,17.96,27666,478307
+SHSA,Southern Hemisphere South America,N,11,16.28,1 month,16.28,16.63,17.96,15030,244689
+SHSA,Southern Hemisphere South America,N,12,15.49,1 month,15.49,15.32,17.96,11276,174660
+TENA,Temperate North America,D,1,3.73,3 month window,3.83,3.73,4.12,12997,49798
+TENA,Temperate North America,D,2,3.83,3 month window,3.66,3.83,4.12,20242,74068
+TENA,Temperate North America,D,3,3.99,3 month window,3.92,3.99,4.12,37900,148739
+TENA,Temperate North America,D,4,4.21,3 month window,4.3,4.21,4.12,29890,128604
+TENA,Temperate North America,D,5,4.54,3 month window,4.94,4.54,4.12,10517,51982
+TENA,Temperate North America,D,6,4.77,3 month window,4.83,4.77,4.12,9764,47203
+TENA,Temperate North America,D,7,4.68,3 month window,4.58,4.68,4.12,13855,63516
+TENA,Temperate North America,D,8,4.5,3 month window,4.67,4.5,4.12,31809,148420
+TENA,Temperate North America,D,9,4.18,3 month window,4.25,4.18,4.12,25555,108661
+TENA,Temperate North America,D,10,3.82,3 month window,3.51,3.82,4.12,25471,89413
+TENA,Temperate North America,D,11,3.59,3 month window,3.64,3.59,4.12,17463,63555
+TENA,Temperate North America,D,12,3.72,3 month window,3.73,3.72,4.12,9806,36568
+TENA,Temperate North America,N,1,54.51,3 month window,122.72,54.51,24.09,82,10063
+TENA,Temperate North America,N,2,83.99,3 month window,124.92,83.99,24.09,98,12242
+TENA,Temperate North America,N,3,74.41,3 month window,64.97,74.41,24.09,378,24560
+TENA,Temperate North America,N,4,60.99,3 month window,70.67,60.99,24.09,369,26076
+TENA,Temperate North America,N,5,32.54,3 month window,50.39,32.54,24.09,479,24135
+TENA,Temperate North America,N,6,21.95,3 month window,22.34,21.95,24.09,2219,49582
+TENA,Temperate North America,N,7,19.98,3 month window,18.79,19.98,24.09,4588,86192
+TENA,Temperate North America,N,8,20.07,3 month window,19.99,20.07,24.09,12828,256458
+TENA,Temperate North America,N,9,21.2,3 month window,21.24,21.2,24.09,5871,124681
+TENA,Temperate North America,N,10,25.49,3 month window,33.47,25.49,24.09,1244,41635
+TENA,Temperate North America,N,11,37.12,3 month window,45.2,37.12,24.09,763,34488
+TENA,Temperate North America,N,12,44.98,3 month window,34.52,44.98,24.09,625,21576
