@@ -1,0 +1,3 @@
+,regional_median_err,regional_fire_weighted_err,regional_day_median,regional_night_median,annual_region_median,box_median_err,box_night_median,total_pred_vs_actual_pct
+Table,11.0,7.1,6.8,20.4,3.6,34.5,56.0,0.3
+Boosting (fixed),8.5,5.4,6.0,14.5,2.4,26.2,33.1,0.3

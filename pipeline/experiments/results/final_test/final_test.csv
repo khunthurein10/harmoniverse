@@ -1,0 +1,4 @@
+method,regional_median_err,regional_fire_weighted_err,regional_day_median,regional_night_median,annual_region_median,box_median_err,box_night_median,total_pred_vs_actual_pct
+Table,9.9,7.2,5.6,17.8,3.9,35.3,56.7,0.9
+A (boosting day+night),7.4,4.8,5.3,10.0,2.0,26.4,33.4,0.0
+"B (table day, boosting night)",7.8,5.8,5.6,10.0,1.9,32.7,33.4,0.9

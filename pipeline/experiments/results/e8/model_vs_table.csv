@@ -1,0 +1,4 @@
+method,regional_median_err,regional_fire_weighted_err,regional_day_median,regional_night_median,annual_region_median,box_median_err,box_night_median,total_pred_vs_actual_pct
+Table (chosen),11.1,7.1,6.6,20.8,3.6,35.0,55.2,0.3
+RF (MRBA60-like),23.0,10.3,16.8,31.6,5.0,28.7,34.1,-0.3
+Gradient boosting,7.1,4.8,4.7,10.7,2.2,26.3,32.9,-0.6

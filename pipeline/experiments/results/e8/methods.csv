@@ -1,0 +1,6 @@
+method,regional_median_err,regional_fire_weighted_err,regional_day_median,regional_night_median,annual_region_median,box_median_err,box_night_median
+B (1 month),11.0,7.4,6.3,20.5,4.2,35.0,55.4
+B-3m,11.8,8.1,7.3,20.3,3.8,35.0,55.3
+B-fb,11.0,7.3,6.3,20.9,4.1,35.0,55.3
+B-3m-fb,11.8,8.1,7.3,20.4,3.8,35.0,55.3
+C per-box map,12.0,8.2,7.1,20.4,5.0,32.4,53.9
