@@ -36,3 +36,15 @@ _to_delete/
 
 # Internal notes (used for the report, not published)
 docs/
+
+# Experiment smoke-test outputs (--quick)
+pipeline/experiments/results/**/*_quick*
+data/interim/models_quick/
+
+# LaTeX build files
+reports/*.aux
+reports/*.log
+reports/*.fls
+reports/*.fdb_latexmk
+reports/*.out
+reports/*.synctex.gz
