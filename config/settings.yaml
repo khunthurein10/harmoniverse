@@ -1,0 +1,63 @@
+# All pipeline settings in one place. Values marked OPEN are decided by experiments.
+
+record:
+  area: world               # world, or a sample region name below
+  download_start: 2000-11
+  start_year: 2003          # core record; Terra-only 2000-2002 is a stretch goal
+  end_date: latest
+  target_scale: SNPP        # harmonize onto the S-NPP VIIRS scale
+
+grid:
+  type: latlon              # latlon | h3 (E9)
+  cell_deg: 0.25            # GFED5NRT, MRBA60
+  per_area: true            # report hotspots per 1000 km2
+  time_step: month
+  date_basis: utc           # decided: FIRMS UTC date (no paper for local solar); local_solar still possible
+
+cleaning:
+  keep_type: [0]            # 0 = presumed vegetation fire
+  modis_min_confidence: 30
+  viirs_drop_confidence: [low]
+  static_mask_cell_deg: 0.01
+  static_mask_min_detections: 6   # GFED5NRT 2.3.2: "more than five" type != 0
+  static_mask_persistence: true  # rule 2 on/off (our choice); compare both in step 3
+  static_mask_min_days: 16        # MODIS C6 User Guide Table 10 (type 2 = 16+ days in a year)
+  static_mask_min_months: 7       # our choice, from 2012 FIRMS cells already caught by rule 1
+  static_mask_long_run: true      # rule 2b on/off (our choice); compare in step 3
+  static_mask_long_run_days: 60   # our choice: 2012 seasonal fire cells stayed under 45 days
+
+viewing_angle:
+  method: OPEN              # centre_only | pixel_area_clue | none  (E6)
+  modis_max_scan_angle_deg: 30    # equals FIRMS scan <= ~1.42 km
+
+groups:
+  region: gfed14            # GFED basis regions
+  land: mcd12c1             # MODIS land cover, grouped
+
+calibration:
+  pair: [AQUA, SNPP]        # Terra used only as a clue
+  train_years: [2012, 2016]
+  test_years: [2017, 2019]  # backcast
+  avoid_after: 2020         # MODIS orbit drift
+  conversion: OPEN          # A_global | B_region_landtype | C_ratio_map | D_ml  (E2-E5)
+  missed_fires: OPEN        # accept_zeros | ml_with_fire_mask  (E7)
+  min_group_hotspots: OPEN  # fallback threshold for small groups
+
+relay:
+  noaa20_to_snpp_years: [2018, 2026]   # E8
+  noaa21_to_noaa20_years: [2023, 2026]
+
+sample_regions:            # bounding boxes [west, south, east, north]
+  boreal_canada:   [-125, 49, -110, 60]
+  african_savanna: [15, -20, 35, -5]
+  india_cropland:  [73, 28, 80, 32]
+  amazon_forest:   [-65, -15, -50, -5]
+
+paths:
+  raw: data/raw
+  ancillary: data/ancillary
+  clean: data/interim/clean
+  grid: data/interim/grid
+  processed: data/processed
+  results: pipeline/experiments/results
+  figures: reports/figures
