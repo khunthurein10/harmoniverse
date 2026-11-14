@@ -66,19 +66,21 @@ The 90% ranges held 88 to 93% of the true values in testing. Each experiment beh
 - **`app.html`:** the Fire Explorer. Search any country, province or region, or draw an area. Then read its burning
   calendar, map, comparison, "Is it normal?" verdict and trends, and export what you see as CSV or images.
 
-To run it locally (pages must be served over HTTP; opening the file directly does not work):
+It is hosted on Vercel from the `web/` folder; no install or account is needed.
+
+<details>
+<summary>Run it yourself</summary>
+
+Serve `web/` over HTTP (opening the files directly does not work), then open http://localhost:8000:
 
 ```sh
-cd web
-python3 -m http.server 8000
-# open http://localhost:8000
+cd web && python3 -m http.server 8000
 ```
 
-The site reads small files in `web/data/`, made from the zipped dataset by a standard-library script:
+The site reads files in `web/data/`, made from the zipped dataset by `python3 web/build_data.py` (standard library
+only).
 
-```sh
-python3 web/build_data.py
-```
+</details>
 
 ## Rebuilding the dataset
 

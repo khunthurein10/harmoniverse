@@ -301,6 +301,13 @@ footer small { opacity: .82; font-size: 13px; }
 .lk-dl2 { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 16px; font-size: 14px; }
 .lk-dl2 dt { font: 500 13px var(--f-mono, monospace); color: var(--fg); }
 .lk-dl2 dd { margin: 0; color: var(--sub); }
+.team { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; }
+.team .card { display: grid; justify-items: center; gap: 6px; text-align: center; padding: 26px 16px; }
+.team svg { width: 96px; height: 96px; margin-bottom: 10px; }
+.team b { font-size: 17px; }
+.team span { color: var(--sub); font-size: 14px; }
+@media (max-width: 1100px) { .team { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .team { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 900px) { .lk-top, .lk-cols { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 560px) { .lk-steps { grid-template-columns: minmax(0, 1fr); } .lk-facts { grid-template-columns: 1fr 1fr; } .lk-facts div:nth-child(3) { border-left: 0; } .lk-facts div:nth-child(n+3) { border-top: 2px solid var(--navy); } .lk-dl2 { grid-template-columns: minmax(0, 1fr); } }
 .lk-modal { padding: 0; border: 0; background: transparent; max-width: min(620px, calc(100vw - 32px)); width: 100%; }
@@ -320,13 +327,13 @@ footer small { opacity: .82; font-size: 13px; }
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" data-guide="Harmoniverse: a fire map with a memory, built on 24 years of NASA satellite hotspots."><canvas id="logo" width="8" height="9" hidden aria-hidden="true"></canvas><img class="brand-mark" src="img/harmoniverse-mark.png" alt="" width="30" height="30">Harmoniverse</a>
-    <nav class="links" aria-label="Sections"><a href="#how">How it works</a><a href="#accuracy">Accuracy &amp; impact</a><a href="#cases">Use cases &amp; research</a><a href="#lookup">Lookup table</a></nav>
+    <nav class="links" aria-label="Sections"><a href="#home">Home</a><a href="#how">How it works</a><a href="#accuracy">Accuracy &amp; impact</a><a href="#cases">Use cases &amp; research</a><a href="#lookup">Lookup table</a></nav>
     <a class="btn p sm" href="app.html" data-guide="Opens the dashboard: the full map, burning calendar, anomalies and CSV export.">Launch Explorer</a>
   </div>
 </header>
 
 <main id="top">
-<div class="page" data-page="how">
+<div class="page" data-page="home">
 <!-- HERO -->
 <section class="wrap hero" aria-label="Introduction">
   <div>
@@ -345,6 +352,24 @@ footer small { opacity: .82; font-size: 13px; }
     </div>
   </div>
 </section>
+<!-- TEAM -->
+<section class="wrap sec" id="team" aria-labelledby="teamT">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <clipPath id="av-clip"><circle cx="48" cy="48" r="48"/></clipPath>
+    <symbol id="av-m" viewBox="0 0 96 96"><g clip-path="url(#av-clip)"><circle cx="48" cy="48" r="48" fill="#dce8fa"/><circle cx="48" cy="38" r="17" fill="#8fa3cc"/><path d="M10 96c2-22 18-37 38-37s36 15 38 37z" fill="#8fa3cc"/></g></symbol>
+    <symbol id="av-f" viewBox="0 0 96 96"><g clip-path="url(#av-clip)"><circle cx="48" cy="48" r="48" fill="#fde4df"/><path d="M27 62c-2-26 6-43 21-43s23 17 21 43z" fill="#c98f86"/><circle cx="48" cy="39" r="16" fill="#e0aaa2"/><path d="M10 96c2-22 18-37 38-37s36 15 38 37z" fill="#e0aaa2"/></g></symbol>
+  </svg>
+  <div class="head"><div><p class="eb">BladeX &amp; Beyond · the team</p><h2 id="teamT">Our <em>team</em></h2></div><p>Five students from five universities, built for the NASA Space Apps Challenge 2026.</p></div>
+  <div class="team">
+    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-m"/></svg><b>Thuta Ye Moe</b><span>University of Melbourne</span></div>
+    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-m"/></svg><b>Nyan Lin Kyaw</b><span>University of Ottawa</span></div>
+    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-m"/></svg><b>Khun Thu Rein</b><span>Carleton University</span></div>
+    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-f"/></svg><b>Nway Zar Chi</b><span>Yonsei University</span></div>
+    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-f"/></svg><b>Su Myat Thwe</b><span>University of British Columbia</span></div>
+  </div>
+</section>
+</div>
+<div class="page" data-page="how">
 <!-- HOW IT WORKS -->
 <section class="wrap sec" id="how" aria-labelledby="howT">
   <div class="head"><div><p class="eb">How it works · 4 chapters</p><h2 id="howT">How a fire record<br>becomes <em>a story</em></h2></div><p>Satellites have watched Earth’s fires every day since the early 2000s. Follow the four chapters from raw hotspots to a harmonized record.</p></div>
@@ -518,7 +543,7 @@ footer small { opacity: .82; font-size: 13px; }
 
 <footer>
   <div class="wrap">
-    <div class="row"><a class="brand" href="#top" style="color:#fff">Harmoniverse</a><nav aria-label="Footer"><a href="#how">How it works</a><a href="#accuracy">Accuracy &amp; impact</a><a href="#cases">Use cases &amp; research</a><a href="#lookup">Lookup table</a></nav></div>
+    <div class="row"><a class="brand" href="#top" style="color:#fff">Harmoniverse</a><nav aria-label="Footer"><a href="#home">Home</a><a href="#how">How it works</a><a href="#accuracy">Accuracy &amp; impact</a><a href="#cases">Use cases &amp; research</a><a href="#lookup">Lookup table</a></nav></div>
     <div class="row"><small>NASA Space Apps Challenge 2026 by Harmoniverse</small></div>
   </div>
 </footer>
@@ -550,10 +575,10 @@ footer small { opacity: .82; font-size: 13px; }
 <script>
 /* One page per section. The hash picks the page; old section links still land on the right page. */
 (function () {
-  const PAGE = { top: 'how', how: 'how', faq: 'how', accuracy: 'acc', impact: 'acc', cases: 'cases', conclusion: 'cases', lookup: 'lookup' };
-  const TOPS = ['top', 'how', 'accuracy', 'cases', 'lookup'];
+  const PAGE = { top: 'home', home: 'home', team: 'home', how: 'how', faq: 'how', accuracy: 'acc', impact: 'acc', cases: 'cases', conclusion: 'cases', lookup: 'lookup' };
+  const TOPS = ['top', 'home', 'how', 'accuracy', 'cases', 'lookup'];
   function show() {
-    const h = decodeURIComponent(location.hash.slice(1)), p = PAGE[h] || 'how';
+    const h = decodeURIComponent(location.hash.slice(1)), p = PAGE[h] || 'home';
     document.querySelectorAll('.page').forEach((el) => { el.hidden = el.dataset.page !== p; });
     document.querySelectorAll('header .links a, footer nav a').forEach((a) => a.setAttribute('aria-current', PAGE[a.getAttribute('href').slice(1)] === p ? 'page' : 'false'));
     const t = h && !TOPS.includes(h) && document.getElementById(h);

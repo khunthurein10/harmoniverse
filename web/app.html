@@ -2728,15 +2728,32 @@ WW.ready.then(function () {   // the console starts once the data files have loa
   yearStrip.addEventListener('keydown', (e) => { const d = { ArrowLeft: -1, ArrowDown: -1, ArrowRight: 1, ArrowUp: 1 }[e.key]; if (d) { e.preventDefault(); pickYear(S.year + d); } });
   yearInput.addEventListener('input', () => { S.year = +yearInput.value; S.inspect = null; renderMapUI(); renderInspector(); renderSummary(); });
   $('#monthChips').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; S.month = +b.dataset.m; S.inspect = null; renderMapUI(); renderInspector(); renderSummary(); if (S.month >= 0) say(`Only ${MONTHS_LONG[S.month]} ${S.year}: ${fmt(ser()[S.year][S.month])} hotspots.`); });
-  let playT = 0;
+  let playing = 0, playRun = 0, playT = 0;
+  const yearShown = (y) => new Promise((resolve) => {   // resolves once that year's hotspots are on the map
+    const t0 = performance.now();
+    const check = () => {
+      if (!playing || (layer.ready && layer.key.startsWith(y + '|')) || S.tab !== 'map' || performance.now() - t0 > 20000) return resolve();
+      setTimeout(check, 100);
+    };
+    WW.mapYear(y).then(check, resolve);
+  });
   $('#play').addEventListener('click', () => {
-    if (playT) return stopPlay();
+    if (playing) return stopPlay();
     if (S.year >= S.to) S.year = S.from - 1;   // play through the years chosen at the top
     $('#play').textContent = '❚❚ Pause'; say('Timelapse on. Watch the fire seasons move around the planet.');
-    const tick = () => { S.year++; renderMapUI(); renderSummary(); if (S.year >= S.to) stopPlay(); };
-    tick(); playT = setInterval(tick, 900);
+    playing = ++playRun;
+    const run = playing;
+    const tick = async () => {
+      S.year++; renderMapUI(); renderSummary();
+      if (S.year < S.to) WW.mapYear(S.year + 1);   // download the next year while this one shows
+      await yearShown(S.year);
+      if (playing !== run) return;
+      if (S.year >= S.to) return stopPlay();
+      playT = setTimeout(tick, 900);
+    };
+    tick();
   });
-  function stopPlay() { clearInterval(playT); playT = 0; $('#play').textContent = '▶ Play'; }
+  function stopPlay() { playing = 0; clearTimeout(playT); playT = 0; $('#play').textContent = '▶ Play'; }
 
   /* Capture: the map plus a header, a scale bar and a source line, saved as one image. */
   function saveMap(type) {
