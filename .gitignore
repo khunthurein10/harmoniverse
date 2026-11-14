@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Secrets
+.env
+
+# Data: too large for GitHub. Keep folder structure and READMEs only.
+data/**/*
+!data/**/
+!data/**/.gitkeep
+!data/**/README.md
+# ...except the final zipped dataset and the trained models (small, needed to reproduce)
+!data/processed/export_zip/*.zip
+!data/processed/export_zip/README_data.md
+!data/interim/models/*
+
+# Experiment outputs (keep small summary tables, ignore big files)
+pipeline/experiments/results/**/*.parquet
+
+# Frontend
+node_modules/
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Files waiting for deletion
+_to_delete/
+
+# Internal notes (used for the report, not published)
+docs/
