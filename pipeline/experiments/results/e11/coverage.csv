@@ -1,0 +1,11 @@
+daynight,size,months,median_true,linear_coverage_pct,linear_half_width_pct,relative_coverage_pct,relative_half_width_pct,binned_coverage_pct,binned_half_width_pct
+D,smallest 20%,42,849.5,100.0,327.3,95.2,443.1,88.1,83.1
+D,small,84,4417.5,100.0,78.9,90.5,33.2,88.1,31.2
+D,middle,97,11196.0,99.0,32.3,90.7,18.4,92.8,18.5
+D,large,107,31773.0,89.7,13.0,90.7,16.2,90.7,16.1
+D,largest 20%,129,123868.0,86.0,6.6,90.7,9.2,91.5,10.3
+N,smallest 20%,142,904.5,92.3,150.2,88.7,104.9,88.0,95.5
+N,small,100,3554.5,91.0,51.4,90.0,47.2,90.0,46.1
+N,middle,86,11692.5,93.0,29.8,94.2,31.9,93.0,32.1
+N,large,77,30817.0,93.5,23.4,96.1,24.0,90.9,24.0
+N,largest 20%,55,104061.0,89.1,20.4,92.7,21.4,89.1,21.6
