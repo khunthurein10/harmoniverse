@@ -16,7 +16,6 @@ data/**/*
 !data/**/README.md
 # ...except the final zipped dataset and the trained models (small, needed to reproduce)
 !data/processed/export_zip/*.zip
-!data/processed/export_zip/README_data.md
 !data/interim/models/*
 
 # Experiment outputs (keep small summary tables, ignore big files)
@@ -48,3 +47,6 @@ reports/*.fls
 reports/*.fdb_latexmk
 reports/*.out
 reports/*.synctex.gz
+
+# Duplicate of export_zip/README.md (the CSV folder itself is not committed)
+data/processed/export/README.md
