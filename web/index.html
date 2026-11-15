@@ -369,10 +369,10 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
   <div class="head"><div><p class="eb">BladeX &amp; Beyond · the team</p><h2 id="teamT">Our <em>team</em></h2></div></div>
   <div class="team">
     <div class="card"><span class="av"><img src="img/team/su.jpg" alt="Photo of Su Myat Thwe" width="96" height="96" loading="lazy"></span><b>Su Myat Thwe</b><span>University of British Columbia</span></div>
-    <div class="card"><span class="av"><img src="img/team/khun.jpg" alt="Photo of Khun Thu Rein" width="96" height="96" loading="lazy"></span><b>Khun Thu Rein</b><span>Carleton University</span></div>
+    <div class="card"><span class="av"><img src="img/team/khun.jpg" alt="Photo of Khun Thu Rein" width="96" height="96" loading="lazy" style="object-position:center 52%"></span><b>Khun Thu Rein</b><span>Carleton University</span></div>
     <div class="card"><span class="av"><img src="img/team/nway.jpg" alt="Photo of Nway Zar Chi" width="96" height="96" loading="lazy" style="object-position:center 35%"></span><b>Nway Zar Chi</b><span>Yonsei University</span></div>
-    <div class="card"><span class="av"><img src="img/team/nyan.jpg" alt="Photo of Nyan Lin Kyaw" width="96" height="96" loading="lazy"></span><b>Nyan Lin Kyaw</b><span>University of Ottawa</span></div>
-    <div class="card"><span class="av"><img src="img/team/thuta.jpg" alt="Photo of Thuta Ye Moe" width="96" height="96" loading="lazy" style="object-position:center 35%"></span><b>Thuta Ye Moe</b><span>University of Melbourne</span></div>
+    <div class="card"><span class="av"><img src="img/team/nyan.jpg" alt="Photo of Nyan Lin Kyaw" width="96" height="96" loading="lazy" ></span><b>Nyan Lin Kyaw</b><span>University of Ottawa</span></div>
+    <div class="card"><span class="av"><img src="img/team/thuta.jpg" alt="Photo of Thuta Ye Moe" width="96" height="96" loading="lazy" style="object-position:center 8%"></span><b>Thuta Ye Moe</b><span>University of Melbourne</span></div>
   </div>
   <blockquote class="team-quote">Across universities, disciplines, time zones, and borders, we brought together our diverse backgrounds in engineering and technology to develop Harmoniverse for the NASA Space Apps Challenge 2026.</blockquote>
 </section>
@@ -421,11 +421,11 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
 <section class="wrap sec" id="faq" aria-labelledby="faqT">
   <div class="head"><div><p class="eb">FAQ · before you explore</p><h2 id="faqT">Common questions,<br><em>clear answers.</em></h2></div><p>A quick guide to the data, the calendar, and what to keep in mind as you explore.</p></div>
   <div class="faq" id="faqList">
-    <details><summary>Where does the fire data come from?</summary><p>From NASA FIRMS active fire detections: MODIS Collection 6.1 (1 km, since 2000) and VIIRS (375 m, since 2012). Up to January 2012 the counts are converted from MODIS; from February 2012 they are real S-NPP VIIRS counts. The record runs from January 2003 to October 2026.</p></details>
-    <details><summary>Why harmonize MODIS and VIIRS?</summary><p>VIIRS sees many small fires that MODIS misses, so raw counts jump when it arrives in 2012. We convert the MODIS years to the S-NPP VIIRS scale, using years when both satellites flew to train and test the conversion, so long-term comparisons stay fair.</p></details>
-    <details><summary>Does one hotspot mean one fire?</summary><p>No. One large fire can produce hundreds of hotspots across days and satellite overpasses. Read counts as fire activity, not a number of fires.</p></details>
-    <details><summary>How do I read the burning calendar?</summary><p>Each row is a year and each column a month. Color shows how many hotspots that month had, and a white dot marks months above the 90th percentile for that month.</p></details>
-    <details><summary>Can I use this for emergency decisions?</summary><p>No. Harmoniverse describes past activity for planning and research. For active fires, follow local authorities and official alert systems.</p></details>
+    <details><summary>Where does the fire data come from?</summary><p>From NASA FIRMS active fire detections: MODIS Collection 6.1 (1 km, since 2000) and VIIRS (375 m, since 2012). Up to January 2012, the counts are converted from MODIS; from February 2012, they are real S-NPP VIIRS counts, with a few months gap-filled where satellite data was missing. The record runs from January 2003 to October 2026.</p></details>
+    <details><summary>Why do MODIS and VIIRS need to be harmonized?</summary><p>VIIRS detects many small fires that MODIS misses, so raw counts jump about sixfold when VIIRS arrives in 2012. We convert the MODIS years to the S-NPP VIIRS scale, training and testing the conversion on years when both satellites were flying, so that comparisons across the whole record stay fair.</p></details>
+    <details><summary>Does one hotspot mean one fire?</summary><p>No. One large fire can produce hundreds of hotspots across several days and satellite overpasses. Read the counts as a measure of fire activity, not as a number of fires.</p></details>
+    <details><summary>How do I read the burning calendar?</summary><p>Each row is a year and each column is a month. In the default “× usual” view, each month is compared with its normal (the 2003–2025 median): orange means more hotspots than usual, purple means fewer. Switch to “Hotspots” to see the counts themselves, from light yellow (quiet) to deep red (heavy). A small black square marks months above the 90th percentile for that month.</p></details>
+    <details><summary>Can I use this for emergency decisions?</summary><p>No. Harmoniverse describes past fire activity for planning and research. For active fires, follow local authorities and official alert systems.</p></details>
   </div>
 </section>
 </div>
