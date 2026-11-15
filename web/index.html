@@ -311,7 +311,9 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
 .lk-dl2 dd { margin: 0; color: var(--sub); }
 .team { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; }
 .team .card { display: grid; justify-items: center; gap: 6px; text-align: center; padding: 26px 16px; }
-.team svg { width: 96px; height: 96px; margin-bottom: 10px; }
+.team svg, .team .av { width: 96px; height: 96px; margin-bottom: 10px; }
+.team .av { display: block; border-radius: 50%; overflow: hidden; background: var(--sky); }
+.team .av img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--x) var(--y); transform: scale(var(--z)); transform-origin: var(--x) var(--y); }
 .team b { font-size: 17px; }
 .team span { color: var(--sub); font-size: 14px; }
 @media (max-width: 1100px) { .team { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
@@ -362,18 +364,13 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
 </section>
 <!-- TEAM -->
 <section class="wrap sec" id="team" aria-labelledby="teamT">
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <clipPath id="av-clip"><circle cx="48" cy="48" r="48"/></clipPath>
-    <symbol id="av-m" viewBox="0 0 96 96"><g clip-path="url(#av-clip)"><circle cx="48" cy="48" r="48" fill="#dce8fa"/><circle cx="48" cy="38" r="17" fill="#8fa3cc"/><path d="M10 96c2-22 18-37 38-37s36 15 38 37z" fill="#8fa3cc"/></g></symbol>
-    <symbol id="av-f" viewBox="0 0 96 96"><g clip-path="url(#av-clip)"><circle cx="48" cy="48" r="48" fill="#fde4df"/><path d="M27 62c-2-26 6-43 21-43s23 17 21 43z" fill="#c98f86"/><circle cx="48" cy="39" r="16" fill="#e0aaa2"/><path d="M10 96c2-22 18-37 38-37s36 15 38 37z" fill="#e0aaa2"/></g></symbol>
-  </svg>
   <div class="head"><div><p class="eb">BladeX &amp; Beyond · the team</p><h2 id="teamT">Our <em>team</em></h2></div><p>Five students from five universities, built for the NASA Space Apps Challenge 2026.</p></div>
   <div class="team">
-    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-m"/></svg><b>Thuta Ye Moe</b><span>University of Melbourne</span></div>
-    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-m"/></svg><b>Nyan Lin Kyaw</b><span>University of Ottawa</span></div>
-    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-m"/></svg><b>Khun Thu Rein</b><span>Carleton University</span></div>
-    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-f"/></svg><b>Nway Zar Chi</b><span>Yonsei University</span></div>
-    <div class="card"><svg role="img" aria-label="Placeholder photo"><use href="#av-f"/></svg><b>Su Myat Thwe</b><span>University of British Columbia</span></div>
+    <div class="card"><span class="av"><img src="img/team/thuta.webp" alt="Photo of Thuta Ye Moe" width="96" height="96" loading="lazy" style="--x:50%;--y:34%;--z:1.8"></span><b>Thuta Ye Moe</b><span>University of Melbourne</span></div>
+    <div class="card"><span class="av"><img src="img/team/nyan.webp" alt="Photo of Nyan Lin Kyaw" width="96" height="96" loading="lazy" style="--x:50%;--y:42%;--z:1.7"></span><b>Nyan Lin Kyaw</b><span>University of Ottawa</span></div>
+    <div class="card"><span class="av"><img src="img/team/khun.webp" alt="Photo of Khun Thu Rein" width="96" height="96" loading="lazy" style="--x:37%;--y:57%;--z:2.4"></span><b>Khun Thu Rein</b><span>Carleton University</span></div>
+    <div class="card"><span class="av"><img src="img/team/nway.png" alt="Photo of Nway Zar Chi" width="96" height="96" loading="lazy" style="--x:50%;--y:32%;--z:1.9"></span><b>Nway Zar Chi</b><span>Yonsei University</span></div>
+    <div class="card"><span class="av"><img src="img/team/su.webp" alt="Photo of Su Myat Thwe" width="96" height="96" loading="lazy" style="--x:56%;--y:44%;--z:1.4"></span><b>Su Myat Thwe</b><span>University of British Columbia</span></div>
   </div>
 </section>
 </div>
