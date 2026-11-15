@@ -228,11 +228,19 @@ section { position: relative; }
 .faq details[open] summary::after { content: "–"; }
 .faq details p { color: var(--sub); padding: 0 0 22px; max-width: 760px; }
 footer { margin-top: 140px; background: var(--blue); color: #fff; }
-footer .wrap { display: grid; gap: 22px; padding-block: 40px calc(40px + env(safe-area-inset-bottom, 0px)); }
-footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 24px; }
-footer nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
-footer nav a { text-decoration: none; }
-footer small { opacity: .82; font-size: 13px; }
+footer .wrap { display: grid; gap: 36px; padding-block: 56px calc(28px + env(safe-area-inset-bottom, 0px)); }
+footer .f-cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+footer .f-about p { margin-top: 14px; max-width: 280px; font-size: 14px; opacity: .82; line-height: 1.5; }
+footer h4 { font-size: 15px; font-weight: 700; margin-bottom: 14px; }
+footer .f-cols nav, footer .f-links { display: grid; gap: 10px; font-size: 14px; }
+footer a { color: #fff; text-decoration: none; opacity: .82; }
+footer a:hover { opacity: 1; text-decoration: underline; }
+footer .brand { opacity: 1; }
+footer .f-icon { display: inline-flex; align-items: center; gap: 8px; }
+footer .f-icon svg { width: 18px; height: 18px; fill: currentColor; }
+footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; border-top: 1px solid rgba(255,255,255,.22); padding-top: 22px; font-size: 13px; opacity: .82; }
+@media (max-width: 900px) { footer .f-cols { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { footer .f-cols { grid-template-columns: 1fr; } }
 
 @keyframes pop { from { opacity: 0; transform: translateY(8px) scale(.96); } }
 
@@ -327,7 +335,7 @@ footer small { opacity: .82; font-size: 13px; }
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" data-guide="Harmoniverse: a fire map with a memory, built on 24 years of NASA satellite hotspots."><canvas id="logo" width="8" height="9" hidden aria-hidden="true"></canvas><img class="brand-mark" src="img/harmoniverse-mark.png" alt="" width="30" height="30">Harmoniverse</a>
-    <nav class="links" aria-label="Sections"><a href="#home">Home</a><a href="#how">How it works</a><a href="#accuracy">Accuracy &amp; impact</a><a href="#cases">Use cases &amp; research</a><a href="#lookup">Lookup table</a></nav>
+    <nav class="links" aria-label="Sections"><a href="#home">Home</a><a href="#how">How It Works</a><a href="#accuracy">Accuracy &amp; Impact</a><a href="#cases">Use Cases &amp; Research</a><a href="#lookup">Lookup Table</a></nav>
     <a class="btn p sm" href="app.html" data-guide="Opens the dashboard: the full map, burning calendar, anomalies and CSV export.">Launch Explorer</a>
   </div>
 </header>
@@ -340,7 +348,7 @@ footer small { opacity: .82; font-size: 13px; }
     <p class="eb"><i class="dot"></i>NASA Space Apps 2026 · Harmonization of MODIS and VIIRS Hot Spots</p>
     <h1>Every Fire<br><em>Tells a Story.</em></h1>
     <p class="lede">A fire map with a memory. Every NASA FIRMS hotspot since 2003, harmonized into one record, so any place on Earth gets its own burning calendar.</p>
-    <div class="ctas"><a class="btn p" href="app.html" data-guide="The dashboard opens on the world map. Pick any country or draw your own area.">Launch Explorer</a><a class="btn s" href="#how" data-guide="Scrolls to the four chapters that explain how the record is built.">See how it works</a></div>
+    <div class="ctas"><a class="btn p" href="app.html" data-guide="The dashboard opens on the world map. Pick any country or draw your own area.">Launch Explorer</a><a class="btn s" href="#how" data-guide="Scrolls to the four chapters that explain how the record is built.">See How It Works</a></div>
   </div>
   <div class="win mapwin">
     <div class="tb"><span>FireMap.exe</span><i>_</i><i>□</i><i>×</i></div>
@@ -543,8 +551,13 @@ footer small { opacity: .82; font-size: 13px; }
 
 <footer>
   <div class="wrap">
-    <div class="row"><a class="brand" href="#top" style="color:#fff">Harmoniverse</a><nav aria-label="Footer"><a href="#home">Home</a><a href="#how">How it works</a><a href="#accuracy">Accuracy &amp; impact</a><a href="#cases">Use cases &amp; research</a><a href="#lookup">Lookup table</a></nav></div>
-    <div class="row"><small>NASA Space Apps Challenge 2026 by Harmoniverse</small></div>
+    <div class="f-cols">
+      <div class="f-about"><a class="brand" href="#top"><img class="brand-mark" src="img/harmoniverse-mark.png" alt="" width="30" height="30">Harmoniverse</a><p>A fire map with a memory: one harmonized record of NASA fire hotspots, 2003 to 2026.</p></div>
+      <div><h4>Explore</h4><nav aria-label="Footer"><a href="#home">Home</a><a href="#how">How It Works</a><a href="#accuracy">Accuracy &amp; Impact</a><a href="#cases">Use Cases &amp; Research</a><a href="#lookup">Lookup Table</a></nav></div>
+      <div><h4>Resources</h4><div class="f-links"><a href="app.html">Fire Explorer</a><a href="https://github.com/khunthurein10/harmoniverse/blob/main/data/processed/export_zip/README.md">Dataset guide</a><a href="https://github.com/khunthurein10/harmoniverse/blob/main/pipeline/README.md">Method and pipeline</a><a href="https://github.com/khunthurein10/harmoniverse/blob/main/LICENSE">License</a></div></div>
+      <div><h4>Connect</h4><div class="f-links"><a class="f-icon" href="https://github.com/khunthurein10/harmoniverse"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0 0 8 0z"/></svg>GitHub</a><a href="https://www.spaceappschallenge.org/2026/challenges/harmonization-of-modis-and-viirs-hot-spots/">Challenge page</a></div></div>
+    </div>
+    <div class="f-bar"><span>© 2026 BladeX &amp; Beyond | NASA Space Apps Challenge 2026</span><span>Data: NASA FIRMS · Code MIT · Dataset CC BY 4.0</span></div>
   </div>
 </footer>
 <dialog class="lk-modal" id="lkModal" aria-labelledby="lkmT">
@@ -558,7 +571,7 @@ footer small { opacity: .82; font-size: 13px; }
       <li><b>The table is used only</b> when a month is bigger than anything the model learned from (flagged <code>above_training_range</code> in the data).</li>
     </ul>
     <p class="note">Multiplying MODIS counts by these ratios will not reproduce our harmonized numbers.</p>
-    <div class="ctas"><button class="btn p" type="button" id="lkmOk">I understand, download</button><button class="btn s" type="button" id="lkmNo">Cancel</button></div>
+    <div class="ctas"><button class="btn p" type="button" id="lkmOk">I Understand, Download</button><button class="btn s" type="button" id="lkmNo">Cancel</button></div>
   </div></div>
 </dialog>
 <script>
@@ -987,6 +1000,24 @@ WW.ready.then(function () {   // starts once the data files have loaded
   const G = WW.areaSeries(WW.GLOBAL), totals = WW.YEARS.map((y) => sum(G.H[y])), tmax = Math.max(...totals), te = edgesOf(totals);
   $('#bars').innerHTML = totals.map((v, i) => `<i style="height:${Math.max(8, (v / tmax) * 100)}%;background:${RAMP[lvl(v, te)]}" data-guide="${WW.YEARS[i]}: about ${fmtK(v)} harmonized hotspots${WW.YEARS[i] === 2026 ? ' so far' : ''}."></i>`).join('');
   $('#totHot').textContent = fmtK(sum(totals));
+
+  /* ---------- big numbers count up, slowing into their value, each time their page opens ---------- */
+  $$('#how .stats b, #accNum, .checks .card b, .bias div:first-child b').forEach((el) => {
+    const m = el.textContent.match(/^([\d.]+)(.*)$/); if (!m) return;
+    const end = parseFloat(m[1]), dec = (m[1].split('.')[1] || '').length, unit = m[2], final = el.textContent;
+    if (RM) return;
+    let raf = 0, done = false;
+    const zero = (0).toFixed(dec) + unit;
+    el.textContent = zero;
+    new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) { if (!el.offsetParent) { cancelAnimationFrame(raf); el.textContent = zero; done = false; } return; }
+      if (done) return;
+      done = true;
+      const t0 = performance.now(), dur = 1800;
+      const step = (t) => { const k = Math.min(1, (t - t0) / dur); el.textContent = (end * (1 - (1 - k) ** 4)).toFixed(dec) + unit; if (k < 1) raf = requestAnimationFrame(step); };
+      raf = requestAnimationFrame(step);
+    }, { threshold: 0.4 }).observe(el);
+  });
   const grid = (id, n, lit) => { const c = $('#' + id).getContext('2d'), s = 220 / n; c.fillStyle = '#fff'; c.fillRect(0, 0, 220, 220); for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) { const L = lit[i + ',' + j]; c.fillStyle = L != null ? RAMP[L] : '#eef2fb'; c.fillRect(j * s + 1, i * s + 1, s - 2, s - 2); } };
   grid('gM', 4, { '1,1': 4, '1,2': 2, '2,1': 1 });
   const vl = {}; [[3,4,5],[3,5,4],[4,3,3],[4,4,5],[4,5,4],[4,6,2],[5,3,2],[5,4,4],[5,5,5],[5,6,3],[6,4,3],[6,5,2],[2,5,1],[7,7,0],[6,7,1],[3,3,1],[8,2,0]].forEach(([a, b, l]) => (vl[a + ',' + b] = l)); grid('gV', 11, vl);

@@ -915,7 +915,7 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
       <ul id="searchList" role="listbox" hidden></ul>
     </div>
       <div class="tb-area"><button class="area-chip" id="areaChip" type="button" data-guide="Your current area. Type a region, country, province or city in the search bar at the top, or draw your own shape on the map."><span id="areaCode"><svg class="px" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M4 0h4v1h-4zM2 1h8v1h-8zM1 2h10v1h-10zM1 3h10v1h-10zM0 4h12v1h-12zM0 5h12v1h-12zM0 6h12v1h-12zM0 7h12v1h-12zM1 8h10v1h-10zM1 9h10v1h-10zM2 10h8v1h-8zM4 11h4v1h-4z" opacity=".3"/><path d="M5 1h2v1h-2zM3 2h4v1h-4zM2 3h5v1h-5zM9 3h2v1h-2zM2 4h4v1h-4zM8 4h3v1h-3zM3 5h3v1h-3zM8 5h4v1h-4zM4 6h1v1h-1zM9 6h3v1h-3zM4 7h2v1h-2zM10 7h1v1h-1zM5 8h3v1h-3zM5 9h2v1h-2zM6 10h1v1h-1z"/></svg></span><span id="areaName">Global</span></button><button class="fbtn ghost" id="clearArea" type="button" hidden aria-label="Clear area" title="Clear area">✕</button></div>
-      <button class="fbtn" id="drawBtn" type="button" data-guide="Draw a rectangle or polygon on the map, or enter a point and radius."><svg class="px" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M9 0h2v1h-2zM8 1h4v1h-4zM7 2h4v1h-4zM6 3h4v1h-4zM5 4h4v1h-4zM4 5h4v1h-4zM3 6h4v1h-4zM2 7h4v1h-4zM1 8h1v1h-1zM3 8h2v1h-2zM1 9h2v1h-2zM0 10h3v1h-3z"/></svg>Draw area</button>
+      <button class="fbtn" id="drawBtn" type="button" data-guide="Draw a rectangle or polygon on the map, or enter a point and radius."><svg class="px" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M9 0h2v1h-2zM8 1h4v1h-4zM7 2h4v1h-4zM6 3h4v1h-4zM5 4h4v1h-4zM4 5h4v1h-4zM3 6h4v1h-4zM2 7h4v1h-4zM1 8h1v1h-1zM3 8h2v1h-2zM1 9h2v1h-2zM0 10h3v1h-3z"/></svg>Draw Area</button>
       <button class="fbtn" id="quickCsv" type="button" data-guide="Download this area's monthly calendar as a CSV file."><svg class="px" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M5 0h2v1h-2zM5 1h2v1h-2zM5 2h2v1h-2zM5 3h2v1h-2zM2 4h8v1h-8zM3 5h6v1h-6zM4 6h4v1h-4zM5 7h2v1h-2zM0 9h1v1h-1zM11 9h1v1h-1zM0 10h1v1h-1zM11 10h1v1h-1zM0 11h12v1h-12z"/></svg>Export CSV<span class="adv-bang csv-bang" aria-hidden="true"><svg viewBox="0 0 6 8" shape-rendering="crispEdges"><rect x="2" y="0" width="2" height="5" fill="#fff"/><rect x="2" y="6" width="2" height="2" fill="#fff"/></svg></span></button>
     </div>
       <div class="status" id="statusPill" data-guide="Compares the latest full month with the same month in 2003–2025."></div>
@@ -923,12 +923,12 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
 
     <div class="workspace">
     <aside class="fside" id="fside" aria-label="Filters">
-      <div class="fside-head"><h3>Filters</h3><span class="adv-n" id="advN" hidden></span><button class="fside-reset" type="button" id="advReset">Reset all</button></div>
+      <div class="fside-head"><h3>Filters</h3><span class="adv-n" id="advN" hidden></span><button class="fside-reset" type="button" id="advReset">Reset All</button></div>
       <div class="chips-on" id="chipsOn" aria-label="Filters that are on"></div>
       <details class="fsec">
         <summary>Time</summary>
         <div class="fsec-body">
-          <div class="seg" id="timeMode" role="radiogroup" aria-label="How to read the months"><button type="button" role="radio" data-v="season" aria-checked="true">Every year</button><button type="button" role="radio" data-v="span" aria-checked="false">Start to End</button></div>
+          <div class="seg" id="timeMode" role="radiogroup" aria-label="How to read the months"><button type="button" role="radio" data-v="season" aria-checked="true">Every Year</button><button type="button" role="radio" data-v="span" aria-checked="false">Start to End</button></div>
           <div class="when">
             <span></span><span class="f-label">From</span><span class="f-label">To</span>
             <span class="f-mini">Year</span><select id="fromY" aria-label="From year" data-guide="First year to show."></select><select id="toY" aria-label="Last year" data-guide="Last year to show."></select>
@@ -938,8 +938,8 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
         </div>
       </details>
       <details class="fsec">
-        <summary>Satellite pass</summary>
-        <div class="fsec-body"><div class="seg" id="dnSeg" role="radiogroup" aria-label="Satellite pass" data-guide="Day is the 1:30 pm pass, night the 1:30 am pass. Harmonized counts only.">
+        <summary>Satellite Pass</summary>
+        <div class="fsec-body"><div class="seg" id="dnSeg" role="radiogroup" aria-label="Satellite Pass" data-guide="Day is the 1:30 pm pass, night the 1:30 am pass. Harmonized counts only.">
           <button type="button" role="radio" data-v="all" aria-checked="true">Day &amp; Night</button><button type="button" role="radio" data-v="day" aria-checked="false">Day</button><button type="button" role="radio" data-v="night" aria-checked="false">Night</button>
         </div><p class="fsec-say">Every count is harmonized to the S-NPP VIIRS scale. <a href="./#accuracy">How accurate is this?</a></p></div>
       </details>
@@ -952,25 +952,25 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
         <div class="fsec-body"><div class="ticks" data-k="burn" role="group" aria-label="Burn Type"></div><p class="fsec-say">What GFED reports burning most in each box. No type from 2025. Works together with Land Type.</p></div>
       </details>
       <details class="fsec">
-        <summary>How unusual</summary>
-        <div class="fsec-body"><div class="ticks" data-k="level" role="group" aria-label="How unusual"></div><p class="fsec-say">Compared with the same month in 2003–2025.</p></div>
+        <summary>How Unusual</summary>
+        <div class="fsec-body"><div class="ticks" data-k="level" role="group" aria-label="How Unusual"></div><p class="fsec-say">Compared with the same month in 2003–2025.</p></div>
       </details>
       <details class="fsec">
-        <summary>Data source</summary>
-        <div class="fsec-body"><div class="ticks" data-k="src" role="group" aria-label="Data source"></div><p class="fsec-say">Where each month's count comes from.</p></div>
+        <summary>Data Source</summary>
+        <div class="fsec-body"><div class="ticks" data-k="src" role="group" aria-label="Data Source"></div><p class="fsec-say">Where each month's count comes from.</p></div>
       </details>
       <details class="fsec">
-        <summary>Satellite outage</summary>
-        <div class="fsec-body"><div class="ticks" data-k="out" role="group" aria-label="Satellite outage"></div><p class="fsec-say">Mark months when a satellite had more than 2 days without data. S-NPP outage months are already filled; Aqua and Terra outages only affect years before 2012.</p></div>
+        <summary>Satellite Outage</summary>
+        <div class="fsec-body"><div class="ticks" data-k="out" role="group" aria-label="Satellite Outage"></div><p class="fsec-say">Mark months when a satellite had more than 2 days without data. S-NPP outage months are already filled; Aqua and Terra outages only affect years before 2012.</p></div>
       </details>
     </aside>
     <div class="work-main">
 
     <div class="tabs" role="tablist" id="tabs" aria-label="Views">
       <button role="tab" type="button" data-tab="calendar" aria-selected="true" data-guide="The burning calendar: every month since 2003 in one grid.">Calendar</button>
-      <button role="tab" type="button" data-tab="map" aria-selected="false" data-guide="Hotspots on the map. Draw your own area of interest here.">Map &amp; area</button>
+      <button role="tab" type="button" data-tab="map" aria-selected="false" data-guide="Hotspots on the map. Draw your own area of interest here.">Map &amp; Area</button>
       <button role="tab" type="button" data-tab="compare" aria-selected="false" data-guide="Compare your current search with a new search.">Compare</button>
-      <button role="tab" type="button" data-tab="anomalies" aria-selected="false" data-guide="Is this month unusual? Compare it with 23 years of history.">Is it normal?</button>
+      <button role="tab" type="button" data-tab="anomalies" aria-selected="false" data-guide="Is this month unusual? Compare it with 23 years of history.">Is It Normal?</button>
       <button role="tab" type="button" data-tab="trends" aria-selected="false" data-guide="Which years burned most, and which places lead.">Trends</button>
       <button role="tab" type="button" data-tab="appendix" aria-selected="false" data-guide="What every field means, how the values were made, the caveats and the credits.">Appendix</button>
       <span class="tab-ink" id="tabInk"></span>
@@ -991,7 +991,7 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
               <button type="button" role="radio" data-tool="poly" aria-checked="false" data-guide="Polygon: click to add points, double-click or click the first point to finish."><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 5L9 2L14 7L11 14L4 12Z" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>Polygon</button>
               <button type="button" role="radio" data-tool="circle" aria-checked="false" data-guide="Point + radius: type a latitude, longitude and distance, or click the map."><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 2" fill="none"/><rect x="7" y="7" width="2" height="2" fill="currentColor"/></svg>Lat/Lon + radius</button>
             </div>
-            <button type="button" class="pbtn sm" id="mapClear" hidden data-guide="Remove the area you drew and go back.">✕ Clear area</button>
+            <button type="button" class="pbtn sm" id="mapClear" hidden data-guide="Remove the area you drew and go back.">✕ Clear Area</button>
             <span class="capture" data-guide="Save what the map is showing as an image file."><b>Capture</b><button type="button" class="pbtn" id="capPng">PNG</button><button type="button" class="pbtn" id="capJpg">JPG</button></span>
           </div>
           <div class="map-filters" id="mapFilters" data-guide="Filter the boxes on the map. Day or night comes from the Sensor bar above."></div>
@@ -1011,7 +1011,7 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
               <label>Lat<input id="cLat" type="number" step="0.01" min="-90" max="90" value="50.2"></label>
               <label>Lon<input id="cLon" type="number" step="0.01" min="-180" max="180" value="-74.5"></label>
               <label>Radius km<input id="cKm" type="number" step="10" min="10" max="3000" value="300"></label>
-              <div class="cf-btns"><button class="pbtn sm primary" type="submit">Use this area</button><button class="pbtn sm ghost" type="button" id="cCancel">Cancel</button></div>
+              <div class="cf-btns"><button class="pbtn sm primary" type="submit">Use This Area</button><button class="pbtn sm ghost" type="button" id="cCancel">Cancel</button></div>
               <p class="note">Tip: click the map to set the center.</p>
             </form>
           </div>
@@ -1030,7 +1030,7 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
           <div class="panel-head">
             <div><h3>Burning activity calendar</h3><p class="note" id="calNote"></p></div>
             <div class="cal-right">
-              <button type="button" class="pbtn sm download-image" data-image-target="p-calendar" data-image-name="burn-calendar">Download image</button>
+              <button type="button" class="pbtn sm download-image" data-image-target="p-calendar" data-image-name="burn-calendar">Download Image</button>
               <div class="head-ctrls cal-ctrls">
               <div class="seg" id="calMode" role="radiogroup" aria-label="Calendar view" data-guide="× usual divides each month by its normal (the median of that calendar month, 2003 to 2025): 1.0 is a usual month, 2.0 twice the usual. Hotspots shows the counts. Percentile ranks each month against its own history.">
                 <button type="button" role="radio" data-v="anom" aria-checked="true">× usual</button>
@@ -1053,7 +1053,7 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
         <section class="tabpanel" id="p-anomalies" role="tabpanel" hidden>
           <aside class="anom-hero" id="anomHero" aria-label="Search verdict" aria-live="polite"></aside>
           <div class="panel">
-          <div class="panel-head"><div><h3>Is it normal?</h3><p class="note">Seasonal patterns and yearly differences.</p></div><button type="button" class="pbtn sm download-image" data-image-target="p-anomalies" data-image-name="fire-seasonal-profile">Download image</button></div>
+          <div class="panel-head"><div><h3>Is It Normal?</h3><p class="note">Seasonal patterns and yearly differences.</p></div><button type="button" class="pbtn sm download-image" data-image-target="p-anomalies" data-image-name="fire-seasonal-profile">Download Image</button></div>
           <div class="sub" id="searchMonthsPanel" hidden>
             <h3>Month by month vs usual</h3>
             <p class="note">Bars compare matching months with their 2003–2025 medians. Blue bands show the middle half of historical values for each calendar month.</p>
@@ -1066,7 +1066,7 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
             <p class="note" id="searchContext"></p>
           </div>
           <div class="sub">
-            <div class="sub-head" style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap"><div><h3>Seasonal profile</h3><p class="note" id="profNote">Grey bar = middle half of 2003–2025, thin line = lowest to highest, green tick = the typical month (median), dots = the chosen year.</p></div><div class="prof-ctrls"><div class="seg" id="profMode" role="radiogroup" aria-label="Compare by"><button type="button" role="radio" data-v="year" aria-checked="true">One year</button><button type="button" role="radio" data-v="month" aria-checked="false">One month</button></div><label class="f-group"><span class="f-label" id="profLbl">Year</span><select id="profYear" aria-label="Year shown on the seasonal profile"></select></label></div></div>
+            <div class="sub-head" style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap"><div><h3>Seasonal profile</h3><p class="note" id="profNote">Grey bar = middle half of 2003–2025, thin line = lowest to highest, green tick = the typical month (median), dots = the chosen year.</p></div><div class="prof-ctrls"><div class="seg" id="profMode" role="radiogroup" aria-label="Compare by"><button type="button" role="radio" data-v="year" aria-checked="true">One Year</button><button type="button" role="radio" data-v="month" aria-checked="false">One Month</button></div><label class="f-group"><span class="f-label" id="profLbl">Year</span><select id="profYear" aria-label="Year shown on the seasonal profile"></select></label></div></div>
             <div class="chartbox" id="bandChart"></div>
           </div>
           <div class="grid2">
@@ -1080,7 +1080,7 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
         <section class="tabpanel" id="p-trends" role="tabpanel" hidden>
           <aside class="panel summary trend-card" id="trendCard" aria-label="Trend summary" aria-live="polite"></aside>
           <div class="panel trend-main">
-          <div class="panel-head trend-head"><div><h3>Time series</h3><p class="note" id="tsNote">Click a year to pick it everywhere.</p></div><button type="button" class="pbtn sm download-image" data-image-target="p-trends" data-image-name="fire-trends">Download image</button>
+          <div class="panel-head trend-head"><div><h3>Time series</h3><p class="note" id="tsNote">Click a year to pick it everywhere.</p></div><button type="button" class="pbtn sm download-image" data-image-target="p-trends" data-image-name="fire-trends">Download Image</button>
             <div class="head-ctrls"><div class="seg" id="tsMode" role="radiogroup" aria-label="Time series step" data-guide="Yearly totals, or every month with its 90% range."><button type="button" role="radio" data-v="year" aria-checked="true">Yearly</button><button type="button" role="radio" data-v="month" aria-checked="false">Monthly</button></div><span class="sample">S-NPP VIIRS scale</span></div></div>
           <div class="chartbox" id="trendYear"></div>
           <div class="grid2">
@@ -1093,7 +1093,7 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
         <section class="tabpanel" id="p-compare" role="tabpanel" hidden>
           <div class="panel cmp-main">
           <div class="panel-head"><div><h3>Compare your current search</h3><p class="note" id="cmpNote"></p></div>
-            <div class="head-ctrls"><button type="button" class="pbtn sm download-image" data-image-target="p-compare" data-image-name="fire-comparison">Download image</button></div></div>
+            <div class="head-ctrls"><button type="button" class="pbtn sm download-image" data-image-target="p-compare" data-image-name="fire-comparison">Download Image</button></div></div>
           <div class="cmp-top">
           <div class="filters" id="cmpCtrls" style="box-shadow:none"></div>
           </div>
@@ -1139,10 +1139,10 @@ dialog.guide-picker header { display: flex; justify-content: space-between; alig
     <canvas class="px" aria-hidden="true"></canvas>
     <div><h2 id="tourTitle"></h2><p id="tourText"></p></div>
   </div>
-  <div class="g-actions"><button type="button" id="tourSkip">Exit tour</button><button type="button" id="tourBack">Back</button><span class="n" id="tourCount"></span><button type="button" class="pri" id="tourNext">Next</button></div>
+  <div class="g-actions"><button type="button" id="tourSkip">Exit Tour</button><button type="button" id="tourBack">Back</button><span class="n" id="tourCount"></span><button type="button" class="pri" id="tourNext">Next</button></div>
 </section>
-<dialog class="guide-picker tour-intro" id="findingDlg" aria-labelledby="findingHead"><header><span id="findingHead">Something out of the ordinary<span class="finding-bang" aria-hidden="true">!</span></span></header><div class="tour-intro-body"><canvas class="px" aria-hidden="true"></canvas><p><b id="findingTitle"></b><span id="findingText"></span></p></div><p class="finding-more" id="findingMore"></p><div class="g-actions"><button type="button" id="findingDetails">See details</button><button type="button" class="pri" id="findingOk">Got it</button></div></dialog>
-<dialog class="guide-picker tour-intro" id="tourIntro" aria-labelledby="tourIntroTitle"><header><span id="tourIntroTitle">Welcome to the Fire Explorer</span></header><div class="tour-intro-body"><canvas class="px" aria-hidden="true"></canvas><p><b>Hi there!</b> Want a quick tour? It shows where everything is in 18 short steps. You can go back or exit at any time.</p></div><div class="g-actions"><button type="button" id="tourIntroSkip">Skip tour</button><button type="button" class="pri" id="tourIntroStart">Start tour</button></div></dialog><div id="toast" role="status" hidden></div>
+<dialog class="guide-picker tour-intro" id="findingDlg" aria-labelledby="findingHead"><header><span id="findingHead">Something out of the ordinary<span class="finding-bang" aria-hidden="true">!</span></span></header><div class="tour-intro-body"><canvas class="px" aria-hidden="true"></canvas><p><b id="findingTitle"></b><span id="findingText"></span></p></div><p class="finding-more" id="findingMore"></p><div class="g-actions"><button type="button" id="findingDetails">See Details</button><button type="button" class="pri" id="findingOk">Got It</button></div></dialog>
+<dialog class="guide-picker tour-intro" id="tourIntro" aria-labelledby="tourIntroTitle"><header><span id="tourIntroTitle">Welcome to the Fire Explorer</span></header><div class="tour-intro-body"><canvas class="px" aria-hidden="true"></canvas><p><b>Hi there!</b> Want a quick tour? It shows where everything is in 18 short steps. You can go back or exit at any time.</p></div><div class="g-actions"><button type="button" id="tourIntroSkip">Skip Tour</button><button type="button" class="pri" id="tourIntroStart">Start Tour</button></div></dialog><div id="toast" role="status" hidden></div>
 <canvas id="wipe" hidden aria-hidden="true"></canvas>
 
 <script>
@@ -2319,7 +2319,7 @@ WW.ready.then(function () {   // the console starts once the data files have loa
       const H = ser(), v = H[q.y][q.m], st = statsOf(S.area);
       el.innerHTML = `<p class="eyebrow">Calendar · ${esc(S.area.name)}</p><h3>${MONTHS_LONG[q.m]} ${q.y}</h3>
         <dl class="kv"><dt>Hotspots</dt><dd>${fmt(v)}</dd>${(() => { const r = rangeOf(S.area, q.y, q.m); return r ? `<dt>90% range</dt><dd>${fmt(r[0])}–${fmt(r[1])}</dd>` : ''; })()}<dt>Source</dt><dd>${esc(sourceShort(q.y, q.m))}</dd><dt>Satellites</dt><dd>${satellites(q.y, q.m)}</dd>${gapRows(q.y, q.m)}<dt>Median ${MONTHS[q.m]}</dt><dd>${fmt(st.med[q.m])}</dd><dt>vs median</dt><dd class="${v > st.med[q.m] ? 'up' : 'down'}">${v == null ? '—' : pctS((v - st.med[q.m]) / (st.med[q.m] || 1))}</dd></dl>
-        <button class="pbtn sm" type="button" id="cellMap">Show on the map</button>`;
+        <button class="pbtn sm" type="button" id="cellMap">Show on the Map</button>`;
       $('#cellMap').addEventListener('click', () => { S.year = q.y; S.month = q.m; setTab('map'); });
     } else {
       el.innerHTML = `<p class="eyebrow">Location</p><h3>${q.land ? 'Land' : 'Open water'}</h3><p class="coord">${fmtLat(q.lat)}, ${fmtLon(q.lon)}</p><p class="empty">No hotspot right here in ${q.y}${S.month >= 0 ? ' ' + MONTHS[S.month] : ''}.</p>
@@ -2891,12 +2891,12 @@ WW.ready.then(function () {   // the console starts once the data files have loa
     $('#mapNote').textContent = burned ? 'GFED5.1 mean annual burned area per box, 2003–2022. Select a box for its value and hotspot details.'
       : (layer.ready && layer.filtered ? `${fmt(layer.shown)} hotspots match your filters in ${when}` : `${fmt(tot)} ${sensorName()} hotspots in ${when}`) + ` · each square is a 28 km box${S.month >= 0 ? ' · ' + sourceShort(S.year, S.month) : ''}${layer.ready ? '' : ' · loading…'}`;
     const o = (v, t, cur) => `<option value="${v}"${v === cur ? ' selected' : ''}>${t}</option>`;
-    $('#mapFilters').innerHTML = `<label class="f-group"><span class="f-label">GFED region</span><select data-f="region">${o('', 'All regions', F.region)}${WW.META.regions.map(([c, n]) => o(c, esc(n), F.region)).join('')}</select></label>
-      <label class="f-group"><span class="f-label">Hotspots per box</span><select data-f="min">${[[0, 'Any'], [2, '2 or more'], [5, '5 or more'], [10, '10 or more'], [50, '50 or more'], [100, '100 or more']].map(([v, t]) => `<option value="${v}"${v === S.adv.min ? ' selected' : ''}>${t}</option>`).join('')}</select></label>
-      <label class="f-group"><span class="f-label">Border boxes</span><select data-f="border">${o('all', 'Show all', S.adv.border)}${o('hide', 'Hide border boxes', S.adv.border)}${o('only', 'Only border boxes', S.adv.border)}</select></label>
-      <label class="f-group"><span class="f-label">Colour overlay</span><select data-f="overlay">${o('none', 'None', F.overlay)}${o('region', 'GFED regions', F.overlay)}${o('land', 'Land Type', F.overlay)}${o('burn', 'Burn Type', F.overlay)}${o('burned', 'Mean burned area (GFED)', F.overlay)}${o('border', 'Boxes crossing a border', F.overlay)}</select></label>
+    $('#mapFilters').innerHTML = `<label class="f-group"><span class="f-label">GFED Region</span><select data-f="region">${o('', 'All regions', F.region)}${WW.META.regions.map(([c, n]) => o(c, esc(n), F.region)).join('')}</select></label>
+      <label class="f-group"><span class="f-label">Hotspots per Box</span><select data-f="min">${[[0, 'Any'], [2, '2 or more'], [5, '5 or more'], [10, '10 or more'], [50, '50 or more'], [100, '100 or more']].map(([v, t]) => `<option value="${v}"${v === S.adv.min ? ' selected' : ''}>${t}</option>`).join('')}</select></label>
+      <label class="f-group"><span class="f-label">Border Boxes</span><select data-f="border">${o('all', 'Show all', S.adv.border)}${o('hide', 'Hide border boxes', S.adv.border)}${o('only', 'Only border boxes', S.adv.border)}</select></label>
+      <label class="f-group"><span class="f-label">Colour Overlay</span><select data-f="overlay">${o('none', 'None', F.overlay)}${o('region', 'GFED regions', F.overlay)}${o('land', 'Land Type', F.overlay)}${o('burn', 'Burn Type', F.overlay)}${o('burned', 'Mean burned area (GFED)', F.overlay)}${o('border', 'Boxes crossing a border', F.overlay)}</select></label>
       ${scopeable() ? `<label class="chk"><input type="checkbox" data-f="scope"${F.scope ? ' checked' : ''}>Only ${esc(S.area.name)}</label>` : ''}
-      ${F.region || F.scope || F.overlay !== 'none' || S.adv.min > 0 || S.adv.border !== 'all' ? '<button type="button" class="fbtn ghost" id="mfReset">Reset map options</button>' : ''}`;
+      ${F.region || F.scope || F.overlay !== 'none' || S.adv.min > 0 || S.adv.border !== 'all' ? '<button type="button" class="fbtn ghost" id="mfReset">Reset Map Options</button>' : ''}`;
     const steps = fireScale();
     let lg = `<span>Hotspots per box${S.month >= 0 ? '' : ' (year)'}</span>` + steps.map((v, i) => `<span><span class="sw" style="background:rgb(${fireRGB(v, steps[3]).map(Math.round)})"></span>${fmt(v)}${i === 3 ? '+' : ''}</span>`).join('') + `<span><span class="sw" style="background:transparent;border:1.5px dashed #ffb547"></span>Area of interest</span>`;
     if (F.overlay === 'burned') lg = '<span>GFED5.1 mean burned area, 2003–2022 · km²/year per box:</span>' +
@@ -3150,7 +3150,7 @@ WW.ready.then(function () {   // the console starts once the data files have loa
     const total = history.length + Number(!history.some(({ year }) => year === first.y));
     const STAT = { high: 'high', above: 'above', normal: 'normal', below: 'below' }[tone] || 'normal';
     hero.className = 'panel summary anom-card';
-    hero.innerHTML = `${areaBlock()}<p class="eyebrow">Is it normal?</p>
+    hero.innerHTML = `${areaBlock()}<p class="eyebrow">Is It Normal?</p>
       <h3>${startLabel === endLabel ? startLabel : startLabel + ' – ' + endLabel}</h3>
       <p class="sum-tag">${esc(sensorName()[0].toUpperCase() + sensorName().slice(1))} · ${latestOnly ? 'latest month of your search' : `${months.length} matching ${months.length === 1 ? 'month' : 'months'}`}</p>
       <div class="big">${fmt(searched.value)}</div>
@@ -3902,7 +3902,7 @@ WW.ready.then(function () {   // the console starts once the data files have loa
   const medOf = (sr, years) => MONTHS.map((_, m) => median(years.map((y) => sr[y][m]).filter((v) => v != null)));
   const key = (c, t) => `<span style="display:inline-flex;align-items:center;gap:6px;margin-right:14px"><i style="width:14px;height:3px;background:${c};display:inline-block"></i>${esc(t)}</span>`;
   const passOptions = [['all', 'Day and night'], ['day', 'Day'], ['night', 'Night']];
-  const filterGroups = [['land', 'Land Type'], ['burn', 'Burn Type'], ['level', 'How unusual'], ['src', 'Data source'], ['out', 'Satellite Outage']];
+  const filterGroups = [['land', 'Land Type'], ['burn', 'Burn Type'], ['level', 'How Unusual'], ['src', 'Data Source'], ['out', 'Satellite Outage']];
   const freshAreaBFilters = () => ({
     from: YEARS[0], to: YEARS[YEARS.length - 1], dn: 'all', sensor: 'harm',
     adv: { mode: 'season', from: 0, to: 11, levels: [] },
@@ -3917,15 +3917,15 @@ WW.ready.then(function () {   // the console starts once the data files have loa
   const areaOpt = (a) => `<option value="${a.key}">${esc(a.name)}</option>`;
   const sec = (title, body, open) => `<details class="fsec"${open ? ' open' : ''}><summary>${title}</summary><div class="fsec-body">${body}</div></details>`;
   const plainSel = (name, label, options) => `<select name="${name}" aria-label="${label}">${options.map(([v, t]) => `<option value="${v}">${esc(t)}</option>`).join('')}</select>`;
-  cmpBForm.innerHTML = `<div class="fside-head"><h3><svg class="px" viewBox="0 0 12 12" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M3 0h4v1H3zM2 1h1v1H2zM7 1h1v1H7zM1 2h1v4H1zM8 2h1v4H8zM2 6h1v1H2zM7 6h1v1H7zM3 7h4v1H3zM8 7h1v1H8zM9 8h1v1H9zM10 9h1v1h-1zM11 10h1v2h-1z"/></svg> New Search filters</h3><button type="reset" class="fside-reset">Reset all</button></div>
+  cmpBForm.innerHTML = `<div class="fside-head"><h3><svg class="px" viewBox="0 0 12 12" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M3 0h4v1H3zM2 1h1v1H2zM7 1h1v1H7zM1 2h1v4H1zM8 2h1v4H8zM2 6h1v1H2zM7 6h1v1H7zM3 7h4v1H3zM8 7h1v1H8zM9 8h1v1H9zM10 9h1v1h-1zM11 10h1v2h-1z"/></svg> New Search filters</h3><button type="reset" class="fside-reset">Reset All</button></div>
     <div class="chips-on" id="cmpBChips" role="group" aria-label="Active New Search filters"></div>
     ${sec('Area / Country', `<select name="area" id="cmpB" aria-label="New Search area"><option value="global">Global</option><optgroup label="GFED regions">${WW.REGIONS.map(areaOpt).join('')}</optgroup><optgroup label="Countries">${WW.COUNTRIES.slice().sort((x, z) => x.name.localeCompare(z.name)).map(areaOpt).join('')}</optgroup></select>`, true)}
-    ${sec('Time', `<div class="seg cmp-seg" data-for="mode" role="radiogroup" aria-label="How to read the months"><button type="button" role="radio" data-v="season" aria-checked="true">Every year</button><button type="button" role="radio" data-v="span" aria-checked="false">Start to End</button></div><span hidden>${plainSel('mode', 'Time mode', [['season', 'Every year'], ['span', 'Start to End']])}</span>
+    ${sec('Time', `<div class="seg cmp-seg" data-for="mode" role="radiogroup" aria-label="How to read the months"><button type="button" role="radio" data-v="season" aria-checked="true">Every Year</button><button type="button" role="radio" data-v="span" aria-checked="false">Start to End</button></div><span hidden>${plainSel('mode', 'Time mode', [['season', 'Every year'], ['span', 'Start to End']])}</span>
       <div class="when"><span></span><span class="f-label">From</span><span class="f-label">To</span>
       <span class="f-mini">Year</span>${plainSel('from', 'From year', yearOptions)}${plainSel('to', 'To year', yearOptions)}
       <span class="f-mini">Month</span>${plainSel('fromMonth', 'From month', monthOptions)}${plainSel('toMonth', 'To month', monthOptions)}</div>
       <p class="fsec-say time-note" id="cmpTimeSay" role="note"></p>`)}
-    ${sec('Satellite pass', `<div class="seg cmp-seg" data-for="dn" role="radiogroup" aria-label="Satellite pass"><button type="button" role="radio" data-v="all" aria-checked="true">Day &amp; Night</button><button type="button" role="radio" data-v="day" aria-checked="false">Day</button><button type="button" role="radio" data-v="night" aria-checked="false">Night</button></div><span hidden>${plainSel('dn', 'Satellite pass', passOptions)}</span><p class="fsec-say">Every count is harmonized to the S-NPP VIIRS scale.</p>`)}
+    ${sec('Satellite Pass', `<div class="seg cmp-seg" data-for="dn" role="radiogroup" aria-label="Satellite Pass"><button type="button" role="radio" data-v="all" aria-checked="true">Day &amp; Night</button><button type="button" role="radio" data-v="day" aria-checked="false">Day</button><button type="button" role="radio" data-v="night" aria-checked="false">Night</button></div><span hidden>${plainSel('dn', 'Satellite Pass', passOptions)}</span><p class="fsec-say">Every count is harmonized to the S-NPP VIIRS scale.</p>`)}
     ${filterGroups.map(([k, label]) => sec(label, `<div class="ticks">${TICK[k]().map(([v, t]) => `<label class="tick"><input type="checkbox" name="${k}" value="${esc(v)}"><span class="tick-box" aria-hidden="true"></span><span class="tick-t${k === 'land' || k === 'burn' ? ' cap' : ''}">${esc(t)}</span></label>`).join('')}</div>`)).join('')}`;
   cmpBChips = $('#cmpBChips');
   cmpBForm.addEventListener('click', (e) => {
