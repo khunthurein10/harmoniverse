@@ -311,11 +311,13 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
 .lk-dl2 dd { margin: 0; color: var(--sub); }
 .team { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; }
 .team .card { display: grid; justify-items: center; gap: 6px; text-align: center; padding: 26px 16px; }
-.team svg, .team .av { width: 96px; height: 96px; margin-bottom: 10px; }
-.team .av { display: block; border-radius: 50%; overflow: hidden; background: var(--sky); }
-.team .av img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--x) var(--y); transform: scale(var(--z)); transform-origin: var(--x) var(--y); }
+.team .av { width: 96px; height: 96px; margin-bottom: 10px; border-radius: 50%; overflow: hidden; background: var(--sky); }
+.team .av img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
 .team b { font-size: 17px; }
 .team span { color: var(--sub); font-size: 14px; }
+.team-quote { margin: 36px auto 0; max-width: 720px; text-align: center; font-size: 18px; line-height: 1.55; color: var(--sub); quotes: "“" "”"; }
+.team-quote::before { content: open-quote; color: var(--blue); font-size: 1.4em; margin-right: 2px; }
+.team-quote::after { content: close-quote; color: var(--blue); font-size: 1.4em; margin-left: 2px; }
 @media (max-width: 1100px) { .team { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .team { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 900px) { .lk-top, .lk-cols { grid-template-columns: minmax(0, 1fr); } }
@@ -364,14 +366,15 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
 </section>
 <!-- TEAM -->
 <section class="wrap sec" id="team" aria-labelledby="teamT">
-  <div class="head"><div><p class="eb">BladeX &amp; Beyond · the team</p><h2 id="teamT">Our <em>team</em></h2></div><p>Five students from five universities, built for the NASA Space Apps Challenge 2026.</p></div>
+  <div class="head"><div><p class="eb">BladeX &amp; Beyond · the team</p><h2 id="teamT">Our <em>team</em></h2></div></div>
   <div class="team">
-    <div class="card"><span class="av"><img src="img/team/thuta.webp" alt="Photo of Thuta Ye Moe" width="96" height="96" loading="lazy" style="--x:50%;--y:34%;--z:1.8"></span><b>Thuta Ye Moe</b><span>University of Melbourne</span></div>
-    <div class="card"><span class="av"><img src="img/team/nyan.webp" alt="Photo of Nyan Lin Kyaw" width="96" height="96" loading="lazy" style="--x:50%;--y:42%;--z:1.7"></span><b>Nyan Lin Kyaw</b><span>University of Ottawa</span></div>
-    <div class="card"><span class="av"><img src="img/team/khun.webp" alt="Photo of Khun Thu Rein" width="96" height="96" loading="lazy" style="--x:37%;--y:57%;--z:2.4"></span><b>Khun Thu Rein</b><span>Carleton University</span></div>
-    <div class="card"><span class="av"><img src="img/team/nway.png" alt="Photo of Nway Zar Chi" width="96" height="96" loading="lazy" style="--x:50%;--y:32%;--z:1.9"></span><b>Nway Zar Chi</b><span>Yonsei University</span></div>
-    <div class="card"><span class="av"><img src="img/team/su.webp" alt="Photo of Su Myat Thwe" width="96" height="96" loading="lazy" style="--x:56%;--y:44%;--z:1.4"></span><b>Su Myat Thwe</b><span>University of British Columbia</span></div>
+    <div class="card"><span class="av"><img src="img/team/su.jpg" alt="Photo of Su Myat Thwe" width="96" height="96" loading="lazy"></span><b>Su Myat Thwe</b><span>University of British Columbia</span></div>
+    <div class="card"><span class="av"><img src="img/team/khun.jpg" alt="Photo of Khun Thu Rein" width="96" height="96" loading="lazy"></span><b>Khun Thu Rein</b><span>Carleton University</span></div>
+    <div class="card"><span class="av"><img src="img/team/nway.jpg" alt="Photo of Nway Zar Chi" width="96" height="96" loading="lazy" style="object-position:center 35%"></span><b>Nway Zar Chi</b><span>Yonsei University</span></div>
+    <div class="card"><span class="av"><img src="img/team/nyan.jpg" alt="Photo of Nyan Lin Kyaw" width="96" height="96" loading="lazy"></span><b>Nyan Lin Kyaw</b><span>University of Ottawa</span></div>
+    <div class="card"><span class="av"><img src="img/team/thuta.jpg" alt="Photo of Thuta Ye Moe" width="96" height="96" loading="lazy" style="object-position:center 35%"></span><b>Thuta Ye Moe</b><span>University of Melbourne</span></div>
   </div>
+  <blockquote class="team-quote">Across universities, disciplines, time zones, and borders, we brought together our diverse backgrounds in engineering and technology to develop Harmoniverse for the NASA Space Apps Challenge 2026.</blockquote>
 </section>
 </div>
 <div class="page" data-page="how">
