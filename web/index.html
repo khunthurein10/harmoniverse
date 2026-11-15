@@ -79,6 +79,7 @@ section { position: relative; }
 .hero h1 { font-size: clamp(40px, 4.6vw, 62px); white-space: nowrap; line-height: 1.02; letter-spacing: -.035em; margin: 22px 0 22px; }
 .hero .lede { color: var(--sub); font-size: 18px; margin-bottom: 30px; }
 .ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+.paper-choice { margin-top: 14px; }
 .mapwin .wb { padding: 0; position: relative; }
 .mtool { display: flex; align-items: center; gap: 10px; padding: 8px 10px; background: #f1f5fd; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
 .mtool b { font-size: 13px; }
@@ -485,7 +486,7 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
   <div class="cases" id="caseList"></div>
   <div class="win paper"><div class="tb"><span>Our_paper.doc</span><i>_</i><i>□</i><i>×</i></div><div class="wb">
     <div><p class="eb">Research · our paper</p><h3>Read the method<br><em style="font-style:normal;color:var(--blue)">behind the calendar</em></h3><p class="sub" style="margin-bottom:24px">Why raw MODIS and VIIRS counts disagree, how we harmonize them, and how we tested the result on years the model never saw.</p>
-      <div class="ctas"><a class="btn p" href="#cases" id="paperBtn" data-guide="Opens our project report with the full method and validation.">View Project Report</a></div><p class="sub" id="paperStatus" role="status" hidden>The project report is not published yet. The method, validation and limitations are summarized in the chapters above.</p></div>
+      <div class="ctas"><button type="button" class="btn p" id="paperBtn" aria-expanded="false" aria-controls="paperChoice" data-guide="Read our project report online or download it as a PDF.">View Project Report</button></div><div class="ctas paper-choice" id="paperChoice" hidden><a class="btn s sm" href="downloads/harmoniverse-project-report.pdf" target="_blank" rel="noopener">View in new tab</a><a class="btn s sm" href="downloads/harmoniverse-project-report.pdf" download="Harmoniverse Project Report - BladeX &amp; Beyond.pdf">Download PDF</a></div></div>
     <dl class="spec" data-guide="Where each part of the record comes from.">
       <div><dt>Hotspots</dt><dd>NASA FIRMS active fire detections</dd></div><div><dt>MODIS</dt><dd>Collection 6.1 · 1 km · since 2000</dd></div><div><dt>VIIRS</dt><dd>375 m · since 2012</dd></div><div><dt>Harmonization</dt><dd>gradient boosting, day and night · trained 2015–2019</dd></div><div><dt>Validation</dt><dd>untouched years 2012–2014</dd></div><div><dt>Boundaries</dt><dd>Natural Earth</dd></div>
     </dl>
@@ -1075,7 +1076,7 @@ WW.ready.then(function () {   // starts once the data files have loaded
     <div class="used"><canvas class="px" data-who="${c.who}"></canvas><span><b>Guide: ${WW.crewById[c.who].role}</b>Useful for ${c.users} · <a href="${c.link}">check it in the Explorer</a></span></div></div></div>`;
   }).join('');
   $$('#caseList canvas').forEach((c) => sprite(c, c.dataset.who, 'stand'));
-  $('#paperBtn').addEventListener('click', (e) => { e.preventDefault(); $('#paperStatus').hidden = false; });
+  $('#paperBtn').addEventListener('click', (e) => { const c = $('#paperChoice'); c.hidden = !c.hidden; e.currentTarget.setAttribute('aria-expanded', String(!c.hidden)); });
 
   /* ---------- CTA heat strip, troop, FAQ ---------- */
   $('#heat').innerHTML = totals.map((v, i) => `<i style="background:${RAMP[lvl(v, te)]}" data-guide="${WW.YEARS[i]}: about ${fmtK(v)} harmonized hotspots worldwide${WW.YEARS[i] === 2026 ? ' so far' : ''}."></i>`).join('');
