@@ -350,7 +350,7 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
 <!-- HERO -->
 <section class="wrap hero" aria-label="Introduction">
   <div>
-    <p class="eb"><i class="dot"></i>NASA Space Apps 2026 · Harmonization of MODIS and VIIRS Hot Spots</p>
+    <p class="eb"><i class="dot"></i><span>NASA Space Apps 2026<br>Harmonization of MODIS and VIIRS Hot Spots</span></p>
     <h1>Every Fire<br><em>Tells a Story.</em></h1>
     <p class="lede">A fire map with a memory. Every NASA FIRMS hotspot since 2003, harmonized into one record, so any place on Earth gets its own burning calendar.</p>
     <div class="ctas"><a class="btn p" href="app.html" data-guide="The dashboard opens on the world map. Pick any country or draw your own area.">Launch Explorer</a><a class="btn s" href="#how" data-guide="Scrolls to the four chapters that explain how the record is built.">See How It Works</a></div>
@@ -385,7 +385,7 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
   <div class="head"><div><p class="eb">How it works · 4 chapters</p><h2 id="howT">How a fire record<br>becomes <em>a story</em></h2></div><p>Satellites have watched Earth’s fires every day since the early 2000s. Follow the four chapters from raw hotspots to a harmonized record.</p></div>
   <div class="rail">
     <article class="ch">
-      <div class="txt"><p class="eb">Chapter 01</p><h3>Earth has a fire history</h3><p>Each glowing point is a hotspot: ground hot enough to be seen from space, from wildfires to crop burning. Together they form a 24-year record.</p><div class="says" data-who="thuta" data-say="Drag the globe to spin it. Africa and South America light up every year."></div></div>
+      <div class="txt"><p class="eb">Chapter 01</p><h3>Earth has a fire history</h3><p>Each glowing point is a hotspot: ground hot enough to be seen from space, from wildfires to crop burning. Together they form a 24-year record.</p><div class="says" data-who="thuta" data-say="Point at a bar to see that year's total. There is no jump in 2012, because every year is on the same VIIRS scale."></div></div>
       <div class="win"><div class="tb"><span>Hotspots_2003-2026.dat</span><i>_</i><i>□</i><i>×</i></div><div class="wb">
         <div class="stats"><div data-guide="The record runs from 2003 to 2026."><b>24</b><span>years of records</span></div><div data-guide="Two sensor families: MODIS (Terra and Aqua) and VIIRS (S-NPP, NOAA-20, NOAA-21)."><b>2</b><span>satellite sensors</span></div><div data-guide="Every harmonized hotspot from January 2003 to October 2026."><b id="totHot">409M</b><span>hotspots</span></div></div>
         <div class="bars" id="bars"></div><div class="axis"><span>2003</span><span>harmonized hotspots per year</span><span>2026</span></div>
@@ -485,7 +485,7 @@ footer .f-bar { display: flex; flex-wrap: wrap; justify-content: space-between; 
   <div class="cases" id="caseList"></div>
   <div class="win paper"><div class="tb"><span>Our_paper.doc</span><i>_</i><i>□</i><i>×</i></div><div class="wb">
     <div><p class="eb">Research · our paper</p><h3>Read the method<br><em style="font-style:normal;color:var(--blue)">behind the calendar</em></h3><p class="sub" style="margin-bottom:24px">Why raw MODIS and VIIRS counts disagree, how we harmonize them, and how we tested the result on years the model never saw.</p>
-      <div class="ctas"><a class="btn p" href="#cases" id="paperBtn" data-guide="Opens our paper with the full method and validation.">View Paper</a></div><p class="sub" id="paperStatus" role="status" hidden>The paper is not published yet. The method, validation and limitations are summarized in the chapters above.</p></div>
+      <div class="ctas"><a class="btn p" href="#cases" id="paperBtn" data-guide="Opens our project report with the full method and validation.">View Project Report</a></div><p class="sub" id="paperStatus" role="status" hidden>The project report is not published yet. The method, validation and limitations are summarized in the chapters above.</p></div>
     <dl class="spec" data-guide="Where each part of the record comes from.">
       <div><dt>Hotspots</dt><dd>NASA FIRMS active fire detections</dd></div><div><dt>MODIS</dt><dd>Collection 6.1 · 1 km · since 2000</dd></div><div><dt>VIIRS</dt><dd>375 m · since 2012</dd></div><div><dt>Harmonization</dt><dd>gradient boosting, day and night · trained 2015–2019</dd></div><div><dt>Validation</dt><dd>untouched years 2012–2014</dd></div><div><dt>Boundaries</dt><dd>Natural Earth</dd></div>
     </dl>
